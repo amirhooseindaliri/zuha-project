@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zuha Döviz ve Altın - Home</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -11,6 +12,8 @@
   <link rel="stylesheet" href="css/textViwe.css">
   <link rel="stylesheet" href="css/aboutUs.css">
   <link rel="stylesheet" href="css/message.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <style>
 
   </style>
@@ -23,27 +26,31 @@
         <img src="assets/zuhadoviznewlogo.png" alt="Z" class="logo-placeholder">
       </div>
       <div class="header-right">
-        <div class="menu-button">MENU</div>
-        <div class="contact-info">
-          444 6 220
-          <span class="datetime">28.04.2025 | 12:24:45</span>
+        <!-- Hamburger Menu Button -->
+        <div id="hamburger-menu" class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Left Bullets Navigation -->
-  <nav class="bullets-nav">
-    <a href="#section1" class="bullet" data-section="section1"></a>
-    <a href="#section2" class="bullet" data-section="section2"></a>
-    <a href="#section3" class="bullet" data-section="section3"></a>
-    <a href="#section4" class="bullet" data-section="section4"></a>
-    <a href="#section5" class="bullet" data-section="section5"></a>
-    <a href="#section6" class="bullet" data-section="section6"></a>
-    <a href="#section7" class="bullet" data-section="section7"></a>
-    <a href="#section8" class="bullet" data-section="section8"></a>
-    <a href="#section9" class="bullet" data-section="section9"></a>
-    <a href="#section10" class="bullet" data-section="section10"></a>
+  <!-- Sidebar Navigation -->
+  <nav id="sidebar-nav" class="sidebar-nav">
+    <button id="close-sidebar" class="close-sidebar">&times;</button>
+    <ul>
+      <li><a href="#section1">Döviz Fiyatları</a></li>
+      <li><a href="#section2">Perakende Fiyatları</a></li>
+      <li><a href="#section3">Gram Altın Fiyatları</a></li>
+      <li><a href="#section4">Sarrafiye Fiyatları</a></li>
+      <li><a href="#section5">Forex Kurları</a></li>
+      <li><a href="#section6">TCMB ve Parite Kurları</a></li>
+      <li><a href="#section7">Hesaplama Aracı</a></li>
+      <li><a href="#section8">İletişim</a></li>
+      <li><a href="#section9">Yasal Uyarı</a></li>
+      <li><a href="#section10">Konumumuz</a></li>
+    </ul>
   </nav>
 
   <!-- Global Sidebar -->

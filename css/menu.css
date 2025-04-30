@@ -1,9 +1,6 @@
 /* Hamburger menu styles */
 .hamburger-menu {
-  position: fixed;
-  top: 24px;
-  right: 32px;
-  width: 32px;
+ width: 32px;
   height: 32px;
   z-index: 2001;
   display: flex;
@@ -40,16 +37,22 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 .sidebar-nav li {
   margin: 24px 0;
   text-align: left;
   padding-left: 32px;
+  text-align: center;
 }
 .sidebar-nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   transition: color 0.2s;
 }
 .sidebar-nav a:hover {
