@@ -1,0 +1,79 @@
+.exchange-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.exchange-input-row {
+  background: #c49a3a;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 16px 8px 8px 16px;
+  gap: 12px;
+  width: 80%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.exchange-label {
+  color: #222;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.exchange-amount-input {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  min-width: 20%;
+  outline: none;
+}
+
+.exchange-dropdown {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  min-width: 20%;
+  background: #fff;
+  color: #222;
+}
+
+.exchange-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c49a3a;
+  border: 2px solid #222;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.3rem;
+  color: #222;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+.exchange-white-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(22, 33, 67, 0.08);
+  padding: 20px 24px;
+  margin-top: 0;
+  color: #162143;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+  width: 80%;
+  max-width: 100%;
+  box-sizing: border-box;
+} 

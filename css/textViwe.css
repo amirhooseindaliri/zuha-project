@@ -1,0 +1,107 @@
+.compliance-section {
+  color: #fff;
+  padding: 60px 0 30px 0;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-align: left;
+}
+
+.compliance-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  gap: 60px;
+}
+
+.compliance-left, .compliance-right {
+  flex: 1 1 0;
+  min-width: 350px;
+}
+
+.compliance-divider {
+  width: 2px;
+  background: #bfa05a;
+  height: 320px;
+  margin: 0 40px;
+  align-self: center;
+}
+
+.compliance-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.compliance-header:first-child {
+  margin-top: 0;
+}
+
+.compliance-bar {
+  display: inline-block;
+  width: 32px;
+  height: 12px;
+  background: #bfa05a;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.compliance-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #bfa05a;
+  margin-right: 8px;
+}
+
+.compliance-desc {
+  font-size: 15px;
+  color: #bfa05a;
+  opacity: 0.8;
+}
+
+.compliance-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.compliance-list li {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
+.compliance-contact {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
+.compliance-contact a {
+  color: #3fa7e0;
+  text-decoration: none;
+  font-size: 22px;
+  margin-left: 8px;
+} 
+
+.title-underline {
+  font-size: 30px;
+  font-weight: bold;
+  color: #bfa05a;
+  border-bottom: 10px solid #bfa05a;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.title-underline-container {
+  width: 80%;
+}
+.description-text {
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
