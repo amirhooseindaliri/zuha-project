@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  align-self: self-start;
+  margin-left: 36px;
 }
 .hamburger-menu span {
   display: block;

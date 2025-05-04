@@ -1,6 +1,6 @@
 .logo-placeholder {
-  width: 300px;
-  height: 100px;
+  width: 325px;
+  height: 67px;
   padding: 20px 30px;
   border-radius: 12px;
   font-size: 2.2rem;
@@ -55,18 +55,18 @@
 .sidebar {
   position: fixed;
   top: 50%;
-  left: 0;
+  left: 2%;
   transform: translateY(-50%);
-  width: 60px;
+  width: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
   z-index: 1000;
-  padding: 20px 10px;
-  background: rgba(22, 33, 67, 0.4);
+  padding: 12px 8px ;
+  background: #172855;
   backdrop-filter: blur(5px);
-  border-radius: 0 12px 12px 0;
+  border-radius: 12px;
 }
 
 .sidebar-item {
@@ -86,15 +86,12 @@
 
 .sidebar-item:hover {
   background: #2a3b6e;
-  color: #ffd700;
+  color: #30457D;
   transform: scale(1.1);
 }
 
 .sidebar-item.active {
-  background: #ffd700;
-  color: #162143;
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  background: #30457D;
 }
 
 .sidebar-item i {
@@ -136,6 +133,46 @@
   display: block;
 }
 
+.vertical-bullets {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 60px;
+  background: #162143;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.vertical-bullets ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+}
+
+.vertical-bullets .bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7B859E;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.vertical-bullets .bullet.active {
+  background: #E4B056;
+  box-shadow: 0 0 0 4px rgba(228,176,86,0.2);
+}
+
 @media (max-width: 900px) {
   /* Remove contact-footer-container responsive styles from here */
 }
+

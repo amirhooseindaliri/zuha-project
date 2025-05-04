@@ -33,7 +33,7 @@
   }
   
   .custom-table-header {
-    background: #c49a3a;
+    background: #E4B056;
     color: #162143;
     font-weight: bold;
     padding: 16px 24px;
@@ -75,38 +75,31 @@
   }
   
   .cell-up {
-    background: #1ca35d;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    border-radius: 16px;
+    display: inline-block;
+    background: #D3F0E3;
+    border-radius: 4px;
     padding: 8px 32px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C7319;
+    text-align: left;
+    min-width: 100px;
   }
 
   
   .cell-down {
-    background: #a31c33;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    border-radius: 16px;
+    display: inline-block;
+    background: #FFD9D9;
+    border-radius: 4px;
     padding: 8px 32px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF0000;
+    text-align: left;
+    min-width: 100px;
   }
 
   .cell-up .value, .cell-down .value {
-    color: #fff;
     flex: 1;
     text-align: center;
   }
@@ -133,15 +126,14 @@
 
   .custom-value-box {
     display: inline-block;
-    background: #f5f7f8;
-    border: 1.5px solid #d3d7db;
-    border-radius: 16px;
+    background: #F9F9F9;
+    border-radius: 4px;
     padding: 8px 32px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #222;
-    text-align: center;
-    width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+    min-width: 100px;
   }
 
   .currency-table-placeholder {
@@ -168,6 +160,28 @@
     text-align: center;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   }
+  
+  .clock-fast-forward-icon {
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
 
+  .trend-up-icon,
+  .trend-down-icon {
+    height: 16px;
+    margin-left: 8px;
+  }
+  .custom-table-time{
+    background-color: #F5C674;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  .tables-container td{
+   color: #000000;
+   font-weight: 700;
+   font-size: 16px; 
+  }
   
   

@@ -93,10 +93,11 @@ body, html {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   max-width: 1800px;
   margin: 0 auto;
+  gap:28px;
 }
 
 .footer-left, .footer-right {
@@ -358,4 +359,59 @@ body, html {
   width: 80%;
   max-width: 90vw;
   box-sizing: border-box;
+}
+
+.info-phone-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.icon-phone {
+}
+
+.phone-number {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.clock-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1a2547;
+  border-radius: 8px;
+  padding: 6px 18px;
+}
+
+.icon-clock {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(62%) saturate(400%) hue-rotate(10deg) brightness(90%) contrast(90%);
+}
+
+.clock-time, .clock-date {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mr-8{
+  margin-right: 8px !important;
 }
