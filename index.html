@@ -85,7 +85,7 @@
       <img src="assets/Sidbar/phone-call.png" alt="Z" width="24" height="24">
     </a>
     <a href="#section9" class="sidebar-item" data-section="section9" id="nav-section9">
-      <img src="assets/Sidbar/home.png" alt="Z" width="24" height="24">
+      <img src="assets/Sidbar/annotation-plus.png" alt="Z" width="24" height="24">
     </a>
     <a href="#section10" class="sidebar-item" data-section="section10" id="nav-section10">
       <img src="assets/Sidbar/home.png" alt="Z" width="24" height="24"  >
@@ -113,11 +113,11 @@
     <!-- Main Content Sections -->
     <section id="section1" class="section">
       <div class="tables-container">
+        <div class="table-step" id="table-step-1">
           <!-- Currency Table -->
           <div class="custom-table-card">
             <div class="custom-table-header">
               <span>Döviz Fiyatları</span>
-         
               <span class="custom-table-date">     <span class="custom-table-time mr-8">
                 <img src="assets/Sections/clock-fast-forward.png" alt="Clock Fast Forward" class="clock-fast-forward-icon" />15:46:08
               </span> 28.04.2025</span>
@@ -209,6 +209,8 @@
               </tbody>
             </table>
           </div>
+        </div>
+        <div class="table-step" id="table-step-2">
           <!-- Metal Table -->
           <div class="custom-table-card">
             <div class="custom-table-header">
@@ -303,7 +305,13 @@
             </table>
           </div>
         </div>
-      </section>
+        <div class="table-bullets">
+          <span class="table-bullet active" data-step="1"></span>
+          <span class="table-bullet" data-step="2"></span>
+        </div>
+        <!-- JS and CSS for table-step navigation will be added -->
+      </div>
+    </section>
 
     <div class="section" id="section2">
       <div class="calc-tool-container">
@@ -718,35 +726,38 @@
       </div>
     </div>
     <div class="section" id="section9">
-      <div class="title-underline-container mt-5 w-64">
-        <div class="title-underline">
-         Etik ile ilgili mesaj gönder
+      <div class="etik-message-container">
+        <div class="etik-message-header">
+          Etik ile ilgili mesajı gondar
         </div>
-      </div>
-      <div class="message-form-container">
-
-        <form class="message-form">
-          <div class="message-form-group">
-            <label class="message-form-label">Adınız *</label>
-            <input type="text" placeholder="Adınız" required class="message-form-input">
+        <form class="etik-message-form">
+          <div class="etik-message-row">
+            <div class="etik-message-group">
+              <label for="etik-ad" class="etik-message-label">Adınız *</label>
+              <input type="text" id="etik-ad" class="etik-message-input" required />
+            </div>
+            <div class="etik-message-group">
+              <label for="etik-soyad" class="etik-message-label">Soyadınız *</label>
+              <input type="text" id="etik-soyad" class="etik-message-input" required />
+            </div>
           </div>
-          <div class="message-form-group">
-            <label class="message-form-label">Soyadınız *</label>
-            <input type="text" placeholder="soyadınız" required class="message-form-input">
+          <div class="etik-message-row">
+            <div class="etik-message-group">
+              <label for="etik-email" class="etik-message-label">EPosta adresiniz</label>
+              <input type="email" id="etik-email" class="etik-message-input" />
+            </div>
+            <div class="etik-message-group">
+              <label for="etik-tel" class="etik-message-label">Telefon numaranız *</label>
+              <input type="tel" id="etik-tel" class="etik-message-input" required />
+            </div>
           </div>
-          <div class="message-form-group">
-            <label class="message-form-label">EPosta adresiniz</label>
-            <input type="email" placeholder="EPosta adresiniz" class="message-form-input">
+          <div class="etik-message-group etik-message-group-full">
+            <label for="etik-mesaj" class="etik-message-label">Mesajınız *</label>
+            <textarea id="etik-mesaj" class="etik-message-textarea" required></textarea>
           </div>
-          <div class="message-form-group">
-            <label class="message-form-label">Telefon numaranız *</label>
-            <input type="tel" placeholder="(+90) 53x xxx xxxx" required class="message-form-input">
-          </div>
-          <div class="message-form-group">
-            <label class="message-form-label">Mesajınız *</label>
-            <textarea placeholder="Mesajınız ..." required class="message-form-textarea"></textarea>
-          </div>
-          <button type="submit" class="message-form-button">Mesaj gönder</button>
+          <button type="submit" class="etik-message-btn">
+            <span class="etik-message-btn-icon">+</span> Mesaj Göndar
+          </button>
         </form>
       </div>
     </div>
