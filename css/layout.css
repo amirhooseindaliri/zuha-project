@@ -63,7 +63,7 @@
   align-items: center;
   gap: 18px;
   z-index: 1000;
-  padding: 12px 8px ;
+  padding: 12px 8px;
   background: #172855;
   backdrop-filter: blur(5px);
   border-radius: 12px;
@@ -86,12 +86,12 @@
 
 .sidebar-item:hover {
   background: #2a3b6e;
-  color: #30457D;
+  color: #30457d;
   transform: scale(1.1);
 }
 
 .sidebar-item.active {
-  background: #30457D;
+  background: #30457d;
 }
 
 .sidebar-item i {
@@ -162,17 +162,25 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #7B859E;
+  background: #7b859e;
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s;
 }
 
 .vertical-bullets .bullet.active {
-  background: #E4B056;
-  box-shadow: 0 0 0 4px rgba(228,176,86,0.2);
+  background: #e4b056;
+  box-shadow: 0 0 0 4px rgba(228, 176, 86, 0.2);
+}
+.mobile-header {
+  display: none;
+}
+
+.vertical-bullets {
+  height: calc(100vh - 49px) !important;
+  top: 49px !important;
+  width: 40px;
 }
 
 @media (max-width: 900px) {
   /* Remove contact-footer-container responsive styles from here */
 }
-

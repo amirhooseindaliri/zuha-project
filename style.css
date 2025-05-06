@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -34,7 +35,6 @@ body, html {
   align-items: center;
   gap: 20px;
 }
-
 
 .brand-text {
   color: #fff;
@@ -87,8 +87,7 @@ body, html {
   right: 0;
   z-index: 1000;
   padding: 20px 40px;
-  background: rgba(22, 33, 67, 0.8);
-  backdrop-filter: blur(10px);
+  background: transparent;
 }
 
 .footer-content {
@@ -97,10 +96,11 @@ body, html {
   align-items: center;
   max-width: 1800px;
   margin: 0 auto;
-  gap:28px;
+  gap: 28px;
 }
 
-.footer-left, .footer-right {
+.footer-left,
+.footer-right {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -131,12 +131,12 @@ body, html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
   }
-  
+
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -163,7 +163,7 @@ body, html {
 }
 
 .section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 80px;
   left: 80px;
@@ -261,11 +261,11 @@ body, html {
 }
 
 .bullet::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   height: 6px;
-  background: #FFD700;
+  background: #ffd700;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -324,31 +324,31 @@ body, html {
 .self-justify-right {
   justify-self: flex-end;
 }
-.w-80{
+.w-80 {
   width: 80%;
 }
 
-.mt-4{
+.mt-4 {
   margin-top: 16px;
 }
 
-.mt-5{
+.mt-5 {
   margin-top: 20px;
 }
 
-.mt-6{
+.mt-6 {
   margin-top: 24px;
 }
 
-.mt-7{
+.mt-7 {
   margin-top: 28px;
 }
 
-.w-64{
+.w-64 {
   width: 64% !important;
 }
 
-.w-70{
+.w-70 {
   width: 70% !important;
 }
 
@@ -398,10 +398,12 @@ body, html {
 .icon-clock {
   width: 22px;
   height: 22px;
-  filter: brightness(0) saturate(100%) invert(62%) sepia(62%) saturate(400%) hue-rotate(10deg) brightness(90%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(62%) sepia(62%) saturate(400%)
+    hue-rotate(10deg) brightness(90%) contrast(90%);
 }
 
-.clock-time, .clock-date {
+.clock-time,
+.clock-date {
   color: #fff;
   font-size: 12px;
   margin-left: 6px;
@@ -412,6 +414,6 @@ body, html {
   text-align: center !important;
 }
 
-.mr-8{
+.mr-8 {
   margin-right: 8px !important;
 }

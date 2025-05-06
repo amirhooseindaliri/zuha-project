@@ -1,3 +1,49 @@
+@media (max-width: 1440px) {
+  .vertical-bullets {
+    height: calc(100vh - 59px) !important;
+    top: 74px !important;
+    width: 40px;
+  }
+  .logo-placeholder {
+    width: 236px;
+    height: 48px;
+  }
+  .main-header {
+    padding: 12px 24px;
+  }
+  .icon-phone {
+    width: 136px;
+    height: 27px;
+  }
+  .info-phone-clock {
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+  .sidebar {
+    gap: 11px;
+  }
+  .sidebar-item {
+    width: 36px;
+    height: 36px;
+  }
+  .custom-table-header {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .custom-table {
+    font-size: 14px;
+  }
+  .custom-table th,
+  .custom-table td {
+    padding: 8px 12px;
+  }
+  .custom-value-box,
+  .cell-up,
+  .cell-down {
+    padding: 4px 12px;
+  }
+}
+
 @media (max-width: 768px) {
   #section1 .tables-container {
     display: block;
@@ -52,14 +98,11 @@
   }
 }
 
-@media (max-width: 443px) {
-}
-
 @media (max-width: 433px) {
   .main-header {
     display: none !important;
   }
-  .mobile-header-433 {
+  .mobile-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -130,11 +173,11 @@
     padding: 14px 5px;
     font-size: 12px;
   }
-  .sidebar{
+  .sidebar {
     width: 33px;
     padding: 10px 4px;
   }
-  .sidebar-item{
+  .sidebar-item {
     width: 30px;
     height: 30px;
   }
