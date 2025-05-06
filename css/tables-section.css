@@ -14,10 +14,11 @@
     box-shadow: 0 4px 24px rgba(22, 33, 67, 0.10);
     padding: 0;
     width: 45%;
-    min-width: 400px;
+    min-width: 599px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
   }
 
   .custom-full-table-card {
@@ -30,6 +31,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
   }
   
   .custom-table-header {
@@ -50,9 +52,25 @@
     font-size: 1rem;
   }
   
+  .custom-table thead,
+  .custom-table tbody {
+    display: block;
+    width: 100%;
+  }
+  
+  .custom-table tbody {
+    max-height: 533px;
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+  }
+  
   .custom-table th, .custom-table td {
     padding: 12px 16px;
     text-align: left;
+    min-width: 120px;
+    box-sizing: border-box;
+    width: 33.33%;
   }
   
   .custom-table th {

@@ -51,3 +51,95 @@
     background: #007bff;
   }
 }
+
+@media (max-width: 443px) {
+}
+
+@media (max-width: 433px) {
+  .main-header {
+    display: none !important;
+  }
+  .mobile-header-433 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #081028;
+    padding: 8px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 48px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .mobile-logo-zuha {
+    width: 165px;
+    height: 33px;
+    object-fit: contain;
+  }
+  .mobile-logo-borsa {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  .footer-logo-two,
+  .footer-logo-two-wrapper {
+    display: none !important;
+  }
+  .scroll-container {
+    height: calc(100vh - 49px);
+    margin-top: 49px;
+  }
+  .vertical-bullets {
+    height: calc(100vh - 49px) !important;
+    top: 49px !important;
+    width: 40px;
+  }
+  #section1 .custom-table-card {
+    max-width: 309px;
+    min-width: 309px;
+  }
+  .custom-table-header {
+    font-size: 10px;
+  }
+  .custom-table-header-item {
+    font-size: 10px;
+  }
+  .tables-container td {
+    font-size: 12px;
+  }
+  .tables-container th {
+    font-size: 10px;
+  }
+  .custom-value-box {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+  .cell-up {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+  .cell-down {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+  .custom-table th,
+  .custom-table td {
+    padding: 14px 5px;
+    font-size: 12px;
+  }
+  .sidebar{
+    width: 33px;
+    padding: 10px 4px;
+  }
+  .sidebar-item{
+    width: 30px;
+    height: 30px;
+  }
+  #section1 .custom-table tbody {
+    max-height: 573px;
+    overflow-y: auto;
+  }
+}
