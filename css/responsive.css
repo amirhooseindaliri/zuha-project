@@ -36,15 +36,139 @@
   .custom-table th,
   .custom-table td {
     padding: 8px 12px;
+    width: 36.33%;
   }
   .custom-value-box,
   .cell-up,
   .cell-down {
     padding: 4px 12px;
   }
+  .footer-content {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1280px) {
+  .vertical-bullets {
+    height: calc(100vh - 59px) !important;
+    top: 74px !important;
+    width: 40px;
+  }
+  .logo-placeholder {
+    width: 236px;
+    height: 48px;
+  }
+  .main-header {
+    padding: 10px 22px;
+  }
+  .icon-phone {
+    width: 71px;
+    height: 18px;
+  }
+  .sidebar {
+    gap: 11px;
+  }
+  .sidebar-item {
+    width: 36px;
+    height: 36px;
+  }
+  .custom-table-header {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .custom-table {
+    font-size: 14px;
+  }
+  .custom-table th,
+  .custom-table td {
+    padding: 8px 12px;
+    width: 36.33%;
+  }
+  .custom-value-box,
+  .cell-up,
+  .cell-down {
+    padding: 4px 12px;
+  }
+  .custom-table-card {
+    min-width: 477px;
+  }
+  .footer-content {
+    justify-content: space-between;
+  }
+  .info-phone-clock {
+    flex-direction: column;
+  }
+  .custom-table tbody {
+    max-height: 423px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .vertical-bullets {
+    height: calc(100vh - 59px) !important;
+    top: 74px !important;
+    width: 40px;
+  }
+  .logo-placeholder {
+    width: 236px;
+    height: 48px;
+    padding-right: 0;
+  }
+  .main-header {
+    padding: 10px 22px;
+  }
+  .icon-phone {
+    width: 106px;
+    height: 27px;
+  }
+  .sidebar {
+    gap: 11px;
+  }
+  .sidebar-item {
+    width: 36px;
+    height: 36px;
+  }
+  .custom-table-header {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .custom-table {
+    font-size: 14px;
+  }
+  .custom-table th,
+  .custom-table td {
+    padding: 8px 12px;
+    width: 33.33%;
+  }
+  .custom-value-box,
+  .cell-up,
+  .cell-down {
+    padding: 4px 8px;
+  }
+  .custom-table-card {
+    min-width: 388px;
+  }
+  .tables-container {
+    gap: 0px;
+  }
+  .footer-content {
+    justify-content: space-between;
+  }
+  .info-phone-clock {
+    flex-direction: column;
+  }
+  .custom-table tbody {
+    max-height: 423px;
+  }
+  .clock-box {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+  .custom-table tbody {
+    max-height: 466px;
+  }
   #section1 .tables-container {
     display: block;
     overflow-y: auto;
@@ -54,6 +178,13 @@
     justify-content: unset;
     align-items: unset;
     text-align: left;
+  }
+  #section1 .tables-container::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  #section1 .tables-container::-webkit-scrollbar-thumb {
+    background: transparent;
   }
   #section1 .table-step {
     min-height: 100vh;
@@ -69,7 +200,7 @@
   #section1 .custom-table-card {
     width: 100%;
     margin: 0;
-    max-width: 500px;
+    max-width: 524px;
   }
   #section1 .custom-table {
     width: 100%;
@@ -95,6 +226,9 @@
   }
   #section1 .table-bullet.active {
     background: #007bff;
+  }
+  .custom-table td {
+    width: 36.33%;
   }
 }
 
@@ -141,8 +275,14 @@
     width: 40px;
   }
   #section1 .custom-table-card {
-    max-width: 309px;
-    min-width: 309px;
+    max-width: 66vw !important;
+    min-width: unset !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+  .custom-table {
+    width: 100% !important;
+    table-layout: fixed !important;
   }
   .custom-table-header {
     font-size: 10px;
@@ -150,28 +290,20 @@
   .custom-table-header-item {
     font-size: 10px;
   }
-  .tables-container td {
-    font-size: 12px;
-  }
-  .tables-container th {
-    font-size: 10px;
-  }
-  .custom-value-box {
-    padding: 6px 4px;
-    font-size: 12px;
-  }
-  .cell-up {
-    padding: 6px 4px;
-    font-size: 12px;
-  }
-  .cell-down {
-    padding: 6px 4px;
-    font-size: 12px;
+  .custom-table th,
+  .custom-table td {
+    padding: 2px 1px !important;
+    font-size: 9px !important;
+    word-break: break-word !important;
+    width: auto !important;
+    min-width: 80px;
   }
   .custom-table th,
   .custom-table td {
-    padding: 14px 5px;
-    font-size: 12px;
+      width: auto !important;
+      padding: 3px 2px !important;  /* Even smaller padding */
+      font-size: 10px !important;   /* Slightly smaller font */
+      word-break: break-word;
   }
   .sidebar {
     width: 33px;
@@ -182,7 +314,19 @@
     height: 30px;
   }
   #section1 .custom-table tbody {
-    max-height: 573px;
-    overflow-y: auto;
+     max-height: 600px;
+     overflow-y: auto;
+   }
+  .custom-value-box,
+  .cell-up,
+  .cell-down {
+    padding: 4px 6px;
+    font-size: 12px;
+    min-width: 78px;
+  }
+  
+  .trend-up-icon, .trend-down-icon{
+    width: 10px;
+    height: 10px;
   }
 }

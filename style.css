@@ -386,7 +386,8 @@ html {
   letter-spacing: 2px;
 }
 
-.clock-box {
+.clock-box,
+.clock-box-tablet-screen {
   display: flex;
   align-items: center;
   gap: 12px;

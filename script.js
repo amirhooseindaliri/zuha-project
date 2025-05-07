@@ -136,7 +136,7 @@ if ((hamburger || hamburger_mobile) && sidebar && closeBtn) {
     sidebar.classList.add("open");
   });
 
-  hamburger.addEventListener("click", () => {
+  hamburger_mobile.addEventListener("click", () => {
     sidebar.classList.add("open");
   });
 
