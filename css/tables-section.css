@@ -36,7 +36,8 @@
   background: #e4b056;
   color: #162143;
   font-weight: bold;
-  padding: 16px 24px;
+  padding: 0px 20px;
+  height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: center;

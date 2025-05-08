@@ -29,7 +29,8 @@
   }
   .custom-table-header {
     font-size: 14px;
-    padding: 12px 20px;
+    padding: 0px 20px;
+    height: 42px;
   }
   .custom-table {
     font-size: 14px;
@@ -81,7 +82,8 @@
   }
   .custom-table-header {
     font-size: 14px;
-    padding: 12px 20px;
+    padding: 0px 20px;
+    height: 42px;
   }
   .custom-table {
     font-size: 14px;
@@ -98,6 +100,22 @@
   }
   .footer-content {
     justify-content: space-between;
+  }
+  .calc-tool-container {
+    max-width: 988px;
+  }
+  .about-us-container {
+    max-width: 1068px;
+    padding: 40px 43px 59px 58px;
+  }
+  .section::before {
+    bottom: 49px;
+  }
+  iframe {
+    height: 407px !important;
+  }
+  .etik-message-container {
+    min-width: 968px;
   }
 }
 
@@ -127,7 +145,8 @@
   }
   .custom-table-header {
     font-size: 14px;
-    padding: 12px 20px;
+    padding: 0px 20px;
+    height: 42px;
   }
   .custom-table {
     font-size: 14px;
@@ -166,6 +185,45 @@
   }
   .section::before {
     right: 57px;
+    bottom: 55px;
+  }
+  .calc-tool-container {
+    max-width: 915px;
+  }
+  .left-side-calc-tool {
+    width: 60%;
+  }
+  .right-side-calc-tool {
+    width: 40%;
+  }
+  .about-us-container {
+    max-width: 937px;
+    padding: 29px;
+  }
+
+  iframe {
+    height: 407px !important;
+  }
+  .clock-box-tablet-screen {
+    display: none;
+  }
+  .about-us-title {
+    font-size: 16px;
+  }
+  .about-us-location {
+    font-size: 18px;
+  }
+  .about-us-icon {
+    margin-right: 25px;
+  }
+  .etik-message-container {
+    min-width: 915px;
+  }
+  .etik-message-form {
+    padding: 32px 53px 0 53px;
+  }
+  .etik-message-btn {
+    margin-top: 2px;
   }
 }
 
@@ -196,7 +254,8 @@
   }
   .custom-table-header {
     font-size: 14px;
-    padding: 12px 20px;
+    padding: 0px 20px;
+    height: 42px;
   }
   .custom-table {
     font-size: 14px;
@@ -205,11 +264,12 @@
   .custom-table td {
     padding: 8px 12px;
     width: 33.33%;
+    font-size: 14px;
   }
   .custom-value-box,
   .cell-up,
   .cell-down {
-    padding: 4px 8px;
+    padding: 4px 4px;
   }
   .custom-table-card {
     min-width: 388px;
@@ -228,6 +288,47 @@
   }
   .clock-box {
     display: none;
+  }
+  .calc-tool-container {
+    max-width: 808px;
+  }
+  .calc-tool-input,
+  .calc-tool-select {
+    width: 200px !important;
+  }
+  .calc-tool-rate {
+    padding: 12px 8px;
+    font-size: 16px;
+  }
+
+  .about-us-container {
+    max-width: 784px;
+    padding: 33px;
+  }
+
+  iframe {
+    height: 317px !important;
+  }
+  .about-us-title {
+    font-size: 16px;
+  }
+  .about-us-location {
+    font-size: 18px;
+  }
+  .about-us-icon {
+    margin-right: 25px;
+  }
+  .clock-box-tablet-screen {
+    display: flex;
+  }
+  .about-us-message-box {
+    margin-left: 0px;
+  }
+  .etik-message-container {
+    min-width: 734px;
+  }
+  .etik-message-btn {
+    margin-top: 40px;
   }
 }
 
@@ -295,6 +396,96 @@
   }
   .custom-table td {
     width: 36.33%;
+  }
+  .calc-tool-container {
+    max-width: 542px;
+  }
+  .calc-tool-content {
+    flex-direction: row;
+  }
+  .calc-tool-row {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: start;
+    align-items: start;
+  }
+  .calc-tool-input,
+  .calc-tool-select {
+    width: 152px !important;
+  }
+  .calc-tool-add-row {
+    align-self: flex-start;
+    max-width: 121px;
+    font-size: 10px;
+    font-weight: 900;
+    margin-top: 1.6rem;
+    border: 2px solid #002fba;
+    padding: 6px;
+    gap: 0px;
+    font-size: 14px;
+  }
+  .left-side-calc-tool {
+    gap: 6px;
+  }
+  .calc-tool-summary-input {
+    width: 101px;
+  }
+  .right-side-calc-tool {
+    gap: 64px;
+  }
+  .calc-tool-rate {
+    min-width: 92px;
+  }
+
+  .about-us-container {
+    max-width: 524px;
+    padding: 33px;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  iframe {
+    height: 243px !important;
+  }
+  .about-us-title {
+    font-size: 16px;
+  }
+  .about-us-location {
+    font-size: 18px;
+  }
+  .about-us-icon {
+    margin-right: 25px;
+  }
+  .clock-box-tablet-screen {
+    display: flex;
+  }
+  .about-us-message-box {
+    margin-left: 0px;
+  }
+  .about-us-left {
+    flex-direction: row;
+  }
+  .wrapper-social {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: start;
+  }
+  .about-us-socials img {
+    margin-left: 0px;
+  }
+  .about-us-message-box {
+    margin-top: 0px;
+    padding: 10px 8px;
+    font-size: 10px;
+  }
+  .about-us-right {
+    width: 100%;
+  }
+  .etik-message-container {
+    min-width: 474px;
+  }
+  .etik-message-btn {
+    margin-top: 40px;
   }
 }
 
@@ -447,6 +638,109 @@
     height: 10px;
     width: 10px;
     margin-left: 8px;
+  }
+
+  .calc-tool-container {
+    max-width: 309px;
+  }
+  .left-side-calc-tool {
+    flex-direction: column;
+    width: 100%;
+  }
+  .right-side-calc-tool {
+    flex-direction: column;
+    width: 100%;
+  }
+  .calc-tool-input {
+    width: 92% !important;
+    padding: 10px 10px;
+  }
+  .calc-tool-summary-input {
+    width: 75% !important;
+    padding: 10px 10px;
+  }
+  .calc-tool-select {
+    width: 100% !important;
+    padding: 10px 10px;
+  }
+  .calc-tool-content {
+    flex-direction: column;
+  }
+  .calc-tool-col {
+    width: 100% !important;
+  }
+  .right-side-calc-tool {
+    gap: 14px;
+  }
+  .calc-tool-summary-row {
+    flex-direction: column;
+    align-items: start;
+  }
+  .calc-tool-add-row {
+    margin-top: 0px;
+  }
+
+  .about-us-container {
+    max-width: 309px;
+    padding: 18px;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 7rem;
+  }
+  .about-us-item {
+    font-size: 14px;
+  }
+
+  iframe {
+    height: 147px !important;
+  }
+  .about-us-title {
+    font-size: 16px;
+  }
+  .about-us-location {
+    font-size: 18px;
+  }
+  .about-us-icon {
+    margin-right: 14px;
+    width: 16px;
+    height: 16px;
+    padding: 7px;
+  }
+  .about-us-message-box {
+    margin-left: 0px;
+  }
+  .about-us-left {
+    flex-direction: column;
+  }
+  .wrapper-social {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: start;
+  }
+  .about-us-socials img {
+    margin-left: 0px;
+  }
+  .about-us-message-box {
+    margin-top: 0px;
+    padding: 10px 8px;
+    font-size: 10px;
+  }
+  .about-us-right {
+    width: 100%;
+  }
+
+  .etik-message-container {
+    min-width: 300px;
+    margin-bottom: 6rem;
+  }
+  .etik-message-btn {
+    margin-top: 40px;
+  }
+  .etik-message-row {
+    flex-direction: column;
+  }
+  .etik-message-form {
+    padding: 20px;
   }
 }
 

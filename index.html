@@ -6,7 +6,6 @@
     <title>Zuha Döviz ve Altın - Home</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/section2.css" />
     <link rel="stylesheet" href="css/tables-section.css" />
     <link rel="stylesheet" href="css/exchange.css" />
     <link rel="stylesheet" href="css/textViwe.css" />
@@ -1269,31 +1268,35 @@
           <div class="calc-tool-header">Hesaplama aracı</div>
           <div class="calc-tool-content">
             <div class="calc-tool-row calc-tool-row-inputs">
-              <div class="calc-tool-col">
-                <label class="calc-tool-label">Miktar</label>
-                <input
-                  type="number"
-                  class="calc-tool-input"
-                  min="0"
-                  step="any"
-                />
+              <div class="left-side-calc-tool">
+                <div class="calc-tool-col">
+                  <label class="calc-tool-label">Miktar</label>
+                  <input
+                    type="number"
+                    class="calc-tool-input"
+                    min="0"
+                    step="any"
+                  />
+                </div>
+                <div class="calc-tool-col">
+                  <label class="calc-tool-label">Birim</label>
+                  <select class="calc-tool-select">
+                    <option>Seçiniz</option>
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>ALTIN</option>
+                  </select>
+                </div>
               </div>
-              <div class="calc-tool-col">
-                <label class="calc-tool-label">Birim</label>
-                <select class="calc-tool-select">
-                  <option>Seçiniz</option>
-                  <option>USD</option>
-                  <option>EUR</option>
-                  <option>ALTIN</option>
-                </select>
-              </div>
-              <div class="calc-tool-col">
-                <label class="calc-tool-label">Alış</label>
-                <div class="calc-tool-rate calc-tool-rate-buy">10,1367</div>
-              </div>
-              <div class="calc-tool-col">
-                <label class="calc-tool-label">Satış</label>
-                <div class="calc-tool-rate calc-tool-rate-sell">10,1367</div>
+              <div class="right-side-calc-tool">
+                <div class="calc-tool-col">
+                  <label class="calc-tool-label">Alış</label>
+                  <div class="calc-tool-rate calc-tool-rate-buy">10,1367</div>
+                </div>
+                <div class="calc-tool-col">
+                  <label class="calc-tool-label">Satış</label>
+                  <div class="calc-tool-rate calc-tool-rate-sell">10,1367</div>
+                </div>
               </div>
             </div>
             <button class="calc-tool-add-row">
@@ -1304,27 +1307,27 @@
               />
               Yeni Satır
             </button>
-            <div class="calc-tool-summary-row">
-              <span class="calc-tool-summary-label">TL Toplamı</span>
-              <input
-                type="text"
-                class="calc-tool-summary-input"
-                value="0,00"
-                readonly
-              />
-              <input
-                type="text"
-                class="calc-tool-summary-input"
-                value="0,00"
-                readonly
-              />
-            </div>
+          </div>
+          <div class="calc-tool-summary-row">
+            <span class="calc-tool-summary-label">TL Toplamı</span>
+            <input
+              type="text"
+              class="calc-tool-summary-input"
+              value="0,00"
+              readonly
+            />
+            <input
+              type="text"
+              class="calc-tool-summary-input"
+              value="0,00"
+              readonly
+            />
           </div>
         </div>
       </div>
 
       <div class="section" id="section3">
-        <div class="tables-container">
+        <div class="d-none tables-container">
           <!-- Currency Table -->
           <div class="custom-table-card">
             <div class="custom-table-header">
@@ -1668,7 +1671,7 @@
       </div>
 
       <div class="section" id="section4">
-        <div class="exchange-container">
+        <div class="d-none exchange-container">
           <div class="exchange-input-row">
             <label class="exchange-label">Miktar :</label>
             <input
@@ -1699,7 +1702,7 @@
       </div>
 
       <div class="section" id="section5">
-        <div class="compliance-section">
+        <div class="d-none compliance-section">
           <div class="compliance-columns">
             <div class="compliance-left">
               <div class="compliance-header">
@@ -1757,11 +1760,11 @@
       </div>
 
       <div class="section" id="section6">
-        <div class="title-underline-container">
+        <div class="d-none title-underline-container">
           <div class="title-underline">Bilgi toplumu hizmetleri</div>
         </div>
 
-        <div class="custom-full-table-card">
+        <div class="d-none custom-full-table-card">
           <div class="custom-table-header">
             <span>Şirket Bilgileri </span>
           </div>
@@ -1805,7 +1808,7 @@
         </div>
       </div>
       <div class="section" id="section7">
-        <div class="section-single-content-container w-80">
+        <div class="d-none section-single-content-container w-80">
           <div class="compliance-header">
             <span class="compliance-bar"></span>
             <span class="compliance-title">Misyon</span>
@@ -1822,66 +1825,70 @@
       <div class="section" id="section8">
         <div class="about-us-container">
           <div class="about-us-left">
-            <div class="about-us-title">
-              <img
-                src="assets/About/interview.png"
-                alt="İletişim"
-                class="about-us-bar"
-                style="
-                  width: 32px;
-                  height: 32px;
-                  margin-right: 12px;
-                  background: none;
-                "
-              />
-              <span>İletişim</span>
-            </div>
-            <div class="about-us-list">
-              <div class="about-us-item">
+            <div class="info-phone">
+              <div class="about-us-title">
                 <img
-                  src="assets/About/phone-call-01.png"
-                  alt="Telefon"
-                  class="about-us-icon"
-                /><span class=""> 444 6 220</span>
-              </div>
-              <div class="about-us-item">
-                <img
-                  src="assets/About/mail.png"
-                  alt="Mail"
-                  class="about-us-icon"
-                /><span class=""> info@zuhadoviz.com</span>
-              </div>
-              <div class="about-us-item">
-                <img
-                  src="assets/About/mail.png"
-                  alt="Mail"
-                  class="about-us-icon"
+                  src="assets/About/interview.png"
+                  alt="İletişim"
+                  class="about-us-bar"
+                  style="
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 12px;
+                    background: none;
+                  "
                 />
-                <span class=""> info@zuhadoviz.com</span>
+                <span>İletişim</span>
+              </div>
+              <div class="about-us-list">
+                <div class="about-us-item">
+                  <img
+                    src="assets/About/phone-call-01.png"
+                    alt="Telefon"
+                    class="about-us-icon"
+                  /><span class=""> 444 6 220</span>
+                </div>
+                <div class="about-us-item">
+                  <img
+                    src="assets/About/mail.png"
+                    alt="Mail"
+                    class="about-us-icon"
+                  /><span class=""> info@zuhadoviz.com</span>
+                </div>
+                <div class="about-us-item">
+                  <img
+                    src="assets/About/mail.png"
+                    alt="Mail"
+                    class="about-us-icon"
+                  />
+                  <span class=""> info@zuhadoviz.com</span>
+                </div>
               </div>
             </div>
-            <div class="about-us-socials">
-              <img
-                src="assets/About/all-sotional-media.png"
-                alt="Sosyal Medya"
-                style="
-                  height: 44px;
-                  max-width: 100%;
-                  object-fit: contain;
-                  border-radius: 0;
-                  box-shadow: none;
-                  background: none;
-                "
-              />
+            <div class="wrapper-social">
+              <div class="about-us-socials">
+                <img
+                  src="assets/About/all-sotional-media.png"
+                  alt="Sosyal Medya"
+                  style="
+                    height: 44px;
+                    max-width: 100%;
+                    object-fit: contain;
+                    border-radius: 0;
+                    box-shadow: none;
+                    background: none;
+                  "
+                />
+              </div>
+              <a href="#" class="about-us-message-btn about-us-message-box">
+                <img
+                  src="assets/About/message-dots-square.png"
+                  alt="Telefon"
+                  width="24"
+                  height="24"
+                />Bize Mesaj Göndermek İçin tıklayın
+              </a>
             </div>
-            <a href="#" class="about-us-message-btn about-us-message-box">
-              <img
-                src="assets/About/message-dots-square.png"
-                alt="Telefon"
-                width="24"
-                height="24"
-              />Bize Mesaj Göndermek İçin tıklayın
-            </a>
           </div>
           <div class="about-us-right">
             <div class="about-us-location">
@@ -1905,10 +1912,6 @@
               ></iframe>
             </div>
           </div>
-        </div>
-        <div class="about-us-copyright">
-          Copyright ©2025
-          <b>Zuha Döviz ve Altın Yetkili Müessese A.Ş. (A Grubu)</b>
         </div>
       </div>
       <div class="section" id="section9">
@@ -1977,10 +1980,10 @@
         </div>
       </div>
       <div class="section" id="section10">
-        <div class="title-underline-container mt-5">
+        <div class="d-none title-underline-container mt-5">
           <div class="title-underline">Konumumuz</div>
         </div>
-        <div class="map-embed-container">
+        <div class="d-none map-embed-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12041.96423278413!2d28.9713892!3d41.01224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba6b7e2e2b0d%3A0x7e2e2b0d7e2e2b0d!2sZuha%20D%C3%B6viz!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str"
             width="100%"
