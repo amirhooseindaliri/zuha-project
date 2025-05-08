@@ -1,3 +1,56 @@
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .vertical-bullets {
+    height: calc(100vh - 59px) !important;
+    top: 74px !important;
+    width: 40px;
+  }
+  .logo-placeholder {
+    width: 236px;
+    height: 48px;
+  }
+  .main-header {
+    padding: 12px 24px;
+  }
+  .icon-phone {
+    width: 136px;
+    height: 27px;
+  }
+  .info-phone-clock {
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+  .sidebar {
+    gap: 8px;
+    top: 54%;
+  }
+  .sidebar-item {
+    width: 36px;
+    height: 36px;
+  }
+  .custom-table-header {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .custom-table {
+    font-size: 14px;
+  }
+  .custom-table th,
+  .custom-table td {
+    padding: 8px 12px;
+    width: 36.33%;
+  }
+  .custom-value-box,
+  .cell-up,
+  .cell-down {
+    padding: 4px 12px;
+  }
+  .footer-content {
+    justify-content: space-between;
+  }
+  .sidebar-nav li {
+    margin: 16px 0;
+  }
+}
 @media (max-width: 1440px) {
   .vertical-bullets {
     height: calc(100vh - 59px) !important;
@@ -101,6 +154,19 @@
   .custom-table tbody {
     max-height: 423px;
   }
+  .sidebar-nav li {
+    margin: 18px 0;
+  }
+  .sidebar-nav a {
+    font-size: 22px;
+  }
+  .tables-container {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .section::before {
+    right: 57px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -167,7 +233,7 @@
 
 @media (max-width: 768px) {
   .custom-table tbody {
-    max-height: 466px;
+    max-height: 396px;
   }
   #section1 .tables-container {
     display: block;
@@ -233,6 +299,9 @@
 }
 
 @media (max-width: 433px) {
+  .tables-container {
+    margin: 0px 0px 0px 1rem;
+  }
   .main-header {
     display: none !important;
   }
@@ -275,9 +344,9 @@
     width: 40px;
   }
   #section1 .custom-table-card {
-    max-width: 66vw !important;
+    max-width: 72vw !important;
     min-width: unset !important;
-    margin: 0 auto !important;
+    margin: 1rem auto 4rem auto;
     box-sizing: border-box;
   }
   .custom-table {
@@ -295,15 +364,15 @@
     padding: 2px 1px !important;
     font-size: 9px !important;
     word-break: break-word !important;
-    width: auto !important;
+    width: 34.33% !important;
     min-width: 80px;
   }
   .custom-table th,
   .custom-table td {
-      width: auto !important;
-      padding: 3px 2px !important;  /* Even smaller padding */
-      font-size: 10px !important;   /* Slightly smaller font */
-      word-break: break-word;
+    width: auto;
+    padding: 3px 2px;
+    font-size: 10px;
+    word-break: break-word;
   }
   .sidebar {
     width: 33px;
@@ -314,9 +383,10 @@
     height: 30px;
   }
   #section1 .custom-table tbody {
-     max-height: 600px;
-     overflow-y: auto;
-   }
+    max-height: 61vh;
+    min-height: 61vh;
+    overflow-y: auto;
+  }
   .custom-value-box,
   .cell-up,
   .cell-down {
@@ -324,9 +394,81 @@
     font-size: 12px;
     min-width: 78px;
   }
-  
-  .trend-up-icon, .trend-down-icon{
+  .cell-down,
+  .cell-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .trend-up-icon,
+  .trend-down-icon {
     width: 10px;
     height: 10px;
+  }
+  .sidebar-nav {
+    width: 264px;
+  }
+  .sidebar-nav li {
+    margin: 14px 0;
+  }
+  .sidebar-nav a {
+    font-size: 20px;
+  }
+  .section::before {
+    background: transparent;
+  }
+  .custom-table td {
+    text-align: center;
+  }
+  thead {
+    padding: 8px;
+  }
+  thead th {
+    width: 50%;
+  }
+  .main-footer {
+    padding: 10px 0px 18px 18px;
+  }
+  .trend-up-icon {
+    display: none;
+  }
+  .trend-down-icon {
+    display: none;
+  }
+  .trend-down-icon-mobile {
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin-left: 8px;
+  }
+  .trend-up-icon-mobile {
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin-left: 8px;
+  }
+}
+
+/* min screen */
+
+@media (min-width: 1440px) {
+  .clock-box-tablet-screen {
+    display: none;
+  }
+}
+
+@media (min-width: 433px) {
+  .trend-down-icon-mobile {
+    display: none;
+  }
+  .trend-up-icon-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .clock-box-tablet-screen {
+    display: none;
   }
 }

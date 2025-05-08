@@ -10,7 +10,7 @@
 
 .custom-table-card {
   background: #fff;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0 4px 24px rgba(22, 33, 67, 0.1);
   padding: 0;
   width: 45%;
@@ -22,7 +22,7 @@
 
 .custom-full-table-card {
   background: #fff;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0 4px 24px rgba(22, 33, 67, 0.1);
   padding: 0;
   width: 80%;
@@ -192,6 +192,7 @@
   height: 16px;
   margin-left: 8px;
 }
+
 .custom-table-time {
   background-color: #f5c674;
   border-radius: 4px;
@@ -216,4 +217,9 @@
 .custom-table td,
 .custom-table th {
   border: none !important;
+}
+.custom-table-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
