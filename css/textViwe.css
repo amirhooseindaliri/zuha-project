@@ -9,20 +9,21 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  max-width: 1200px;
   margin: 0 auto 30px auto;
   gap: 60px;
 }
 
 .compliance-left, .compliance-right {
   flex: 1 1 0;
-  min-width: 350px;
+}
+.compliance-right{
+  align-self: flex-end;
 }
 
 .compliance-divider {
   width: 2px;
-  background: #bfa05a;
-  height: 320px;
+  background: #D9D9D9;
+  height: 408px;
   margin: 0 40px;
   align-self: center;
 }
@@ -40,23 +41,30 @@
 
 .compliance-bar {
   display: inline-block;
-  width: 32px;
-  height: 12px;
-  background: #bfa05a;
+  width: 82px;
+  height: 30px;
+  background: #E4B056;
   margin-right: 10px;
   border-radius: 2px;
 }
 
 .compliance-title {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
-  color: #bfa05a;
+  color: #E4B056;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+.compliance-title small {
+  font-size: 14px;
+  font-weight: 600;
+  color: #E4B056;
   margin-right: 8px;
 }
 
 .compliance-desc {
   font-size: 15px;
-  color: #bfa05a;
+  color: #E4B056;
   opacity: 0.8;
 }
 

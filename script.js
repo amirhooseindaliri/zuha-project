@@ -155,44 +155,44 @@ if ((hamburger || hamburger_mobile) && sidebar && closeBtn) {
 
 // Table-step bullet navigation for Section 1 (responsive, 768px and below)
 document.addEventListener("DOMContentLoaded", function () {
-  const section1 = document.getElementById("section1");
-  if (!section1) return;
-  const container = section1.querySelector(".tables-container");
-  const tableSteps = section1.querySelectorAll(".table-step");
-  const tableBullets = section1.querySelectorAll(".table-bullet");
+  // Find all sections with tables-container
+  sections.forEach(section => {
+    const container = section.querySelector(".tables-container");
+    const tableSteps = section.querySelectorAll(".table-step");
+    const tableBullets = section.querySelectorAll(".table-bullet");
 
-  // Only activate on small screens
-  function isMobile() {
-    return window.innerWidth <= 768;
-  }
+    // Only activate on small screens
+    function isMobile() {
+      return window.innerWidth <= 820;
+    }
 
-  function updateTableBullets() {
-    if (!isMobile()) return;
-    let activeIndex = 0;
-    tableSteps.forEach((step, idx) => {
-      const rect = step.getBoundingClientRect();
-      // Use container's viewport for calculation
-      const containerRect = container.getBoundingClientRect();
-      if (rect.top < containerRect.top + containerRect.height / 2) {
-        activeIndex = idx;
-      }
-    });
-    tableBullets.forEach((b, i) =>
-      b.classList.toggle("active", i === activeIndex)
-    );
-  }
-
-  if (container && tableSteps.length && tableBullets.length) {
-    container.addEventListener("scroll", updateTableBullets);
-    window.addEventListener("resize", updateTableBullets);
-    // Bullet click scrolls to table-step
-    tableBullets.forEach((bullet, idx) => {
-      bullet.addEventListener("click", () => {
-        if (!isMobile()) return;
-        tableSteps[idx].scrollIntoView({ behavior: "smooth", block: "start" });
+    function updateTableBullets() {
+      if (!isMobile()) return;
+      let activeIndex = 0;
+      tableSteps.forEach((step, idx) => {
+        const rect = step.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        if (rect.top < containerRect.top + containerRect.height / 2) {
+          activeIndex = idx;
+        }
       });
-    });
-    // Initial state
-    updateTableBullets();
-  }
+      tableBullets.forEach((b, i) =>
+        b.classList.toggle("active", i === activeIndex)
+      );
+    }
+
+    if (container && tableSteps.length && tableBullets.length) {
+      container.addEventListener("scroll", updateTableBullets);
+      window.addEventListener("resize", updateTableBullets);
+      // Bullet click scrolls to table-step
+      tableBullets.forEach((bullet, idx) => {
+        bullet.addEventListener("click", () => {
+          if (!isMobile()) return;
+          tableSteps[idx].scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+      // Initial state
+      updateTableBullets();
+    }
+  });
 });
