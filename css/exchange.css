@@ -144,7 +144,6 @@
   color: #222;
   outline: none;
   transition: border 0.2s;
-  box-shadow: 0px 0px 5px 0px #00000080;
 }
 .calc-tool-input:focus,
 .calc-tool-select:focus {

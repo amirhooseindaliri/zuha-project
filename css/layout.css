@@ -62,7 +62,7 @@
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  z-index: 1000;
+  z-index: 2000;
   padding: 12px 8px;
   background: #172855;
   backdrop-filter: blur(5px);
@@ -158,19 +158,6 @@
   gap: 16px;
 }
 
-.vertical-bullets .bullet {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #7b859e;
-  cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-}
-
-.vertical-bullets .bullet.active {
-  background: #e4b056;
-  box-shadow: 0 0 0 4px rgba(228, 176, 86, 0.2);
-}
 .mobile-header {
   display: none;
 }
