@@ -36,12 +36,13 @@
   background: #e4b056;
   color: #162143;
   font-weight: bold;
-  padding: 0px 20px;
+  padding: 0 20px;
   height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 .custom-table {
@@ -149,6 +150,7 @@
   font-weight: 700;
   color: #000000;
   text-align: left;
+  width: 100%;
 }
 
 .currency-table-placeholder {
