@@ -53,7 +53,6 @@ html {
 .header-right {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   gap: 10px;
 }
 
