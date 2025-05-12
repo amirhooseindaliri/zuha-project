@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Only activate on small screens
     function isMobile() {
-      return window.innerWidth <= 820;
+      return window.innerWidth <= 860;
     }
 
     function updateTableBullets() {
