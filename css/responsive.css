@@ -1853,3 +1853,16 @@
     margin-top: 31px;
   }
 }
+
+@media (max-width: 375px) and (max-height: 695px) {
+}
+
+@media (min-height: 800px) {
+    .logo-placeholder {
+        width: auto;
+        height: 10vh;
+    }
+    .clock-time, .clock-date {
+        font-size: 16px;
+    }
+}
