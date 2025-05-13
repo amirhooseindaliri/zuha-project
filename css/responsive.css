@@ -68,13 +68,11 @@
     width: 36.33%;
   }
   .custom-value-box {
-    border-radius: 10px;
     padding: 4px 23px;
     width: unset;
   }
   .cell-up,
   .cell-down {
-    border-radius: 10px;
     padding: 4px 12px;
   }
 
@@ -114,13 +112,11 @@
   }
 
   .custom-value-box {
-    border-radius: 10px;
     padding: 4px 33px !important;
   }
 
   .cell-up,
   .cell-down {
-    border-radius: 10px;
     padding: 4px 20px;
   }
 
@@ -137,13 +133,11 @@
   }
 
   .custom-value-box {
-    border-radius: 10px;
     padding: 4px 25px !important;
   }
 
   .cell-up,
   .cell-down {
-    border-radius: 10px;
     padding: 4px 20px;
   }
 
@@ -216,12 +210,10 @@
 
   .cell-up,
   .cell-down {
-    border-radius: 10px;
     padding: 4px 12px;
   }
 
   .custom-value-box {
-    border-radius: 10px;
     font-size: 14px;
     width: fit-content;
   }
@@ -322,7 +314,6 @@
   .custom-value-box,
   .cell-up,
   .cell-down {
-    border-radius: 8px;
     padding: 4px 12px;
   }
 
@@ -577,11 +568,9 @@
   .cell-up,
   .cell-down {
     padding: 4px 4px;
-    border-radius: 8px;
   }
 
   .custom-value-box {
-    border-radius: 8px;
     padding: 4px 14px;
   }
 
@@ -717,13 +706,12 @@
     background: #007bff;
   }
   .custom-value-box {
-    border-radius: 6px;
-    padding: 4px 16px !important;
+    padding: 4px 24px !important;
   }
   .cell-up,
   .cell-down {
-    border-radius: 6px;
     font-size: 14px;
+    padding: 4px 12px !important;
   }
 
   .custom-table td {
@@ -1290,11 +1278,9 @@
     justify-content: space-between;
     align-items: center;
     width: max-content;
-    border-radius: 4px;
   }
 
   .custom-value-box {
-    border-radius: 4px;
     font-size: 14px;
     width: fit-content;
     padding: 4px 17px;
@@ -1764,13 +1750,11 @@
     padding: 8px 0px !important;
   }
   .custom-value-box {
-    border-radius: 4px;
     font-size: 10px;
     padding: 6px 18px !important;
   }
   .cell-up,
   .cell-down {
-    border-radius: 4px;
     font-size: 10px !important;
     display: flex !important;
     justify-content: space-between !important;
