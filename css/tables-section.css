@@ -96,7 +96,7 @@
 .cell-up {
   display: inline-block;
   background: #d3f0e3;
-  border-radius: 4px;
+  border-radius: 12px;
   padding: 4px 8px;
   font-size: 16px;
   font-weight: 700;
@@ -107,7 +107,7 @@
 .cell-down {
   display: inline-block;
   background: #ffd9d9;
-  border-radius: 4px;
+  border-radius: 12px;
   padding: 4px 8px;
   font-size: 16px;
   font-weight: 700;
@@ -144,13 +144,13 @@
 .custom-value-box {
   display: inline-block;
   background: #f9f9f9;
-  border-radius: 4px;
+  border-radius: 12px;
   padding: 4px 19px;
   font-size: 16px;
   font-weight: 700;
   color: #000000;
   text-align: left;
-  width: 100%;
+  width: unset;
 }
 
 .currency-table-placeholder {
@@ -202,14 +202,12 @@
   font-size: 16px;
 }
 
-
 .custom-table {
   border-collapse: collapse;
 }
 .custom-table thead {
   display: inline-table;
 }
-
 
 .custom-table-date {
   display: flex;

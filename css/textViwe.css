@@ -1,7 +1,6 @@
 .compliance-section {
   color: #fff;
   padding: 60px 0 30px 0;
-  font-family: "Oswald", Arial, sans-serif;
   text-align: left;
 }
 
@@ -79,7 +78,6 @@
   font-size: 20px;
   margin-bottom: 4px;
   color: #fff;
-  font-family: "Oswald", Arial, sans-serif;
 }
 
 .compliance-contact {
@@ -87,7 +85,6 @@
   font-size: 24px;
   margin-top: 40px;
   color: #fff;
-  font-family: "Oswald", Arial, sans-serif;
 }
 
 .compliance-contact a {
@@ -111,6 +108,5 @@
 .description-text {
   font-size: 18px;
   color: #fff;
-  font-family: "Oswald", Arial, sans-serif;
   line-height: 150%;
 }

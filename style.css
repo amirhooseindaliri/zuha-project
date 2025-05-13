@@ -1,3 +1,7 @@
+@font-face {
+  font-family: oswald;
+  src: url(fonts/static/Oswald-Regular.ttf);
+}
 body,
 html {
   margin: 0;
@@ -5,7 +9,7 @@ html {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  font-family: Arial, sans-serif;
+  font-family: oswald;
   background: #162143;
   scroll-behavior: smooth;
 }
