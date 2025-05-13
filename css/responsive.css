@@ -91,6 +91,13 @@
   .services-item-value {
     height: 32px !important;
   }
+  .header-content{
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+  .header-content {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 1536px) {
@@ -154,10 +161,6 @@
     margin: auto;
     padding: 12px 24px;
     background: #162143;
-  }
-
-  .header-content {
-    justify-content: space-around;
   }
 
   .icon-phone {
@@ -956,8 +959,8 @@
   }
 
   .vertical-bullets {
-    height: calc(100vh - 49px) !important;
-    top: 49px !important;
+    height: unset !important;
+    top: 25% !important;
     width: 40px;
   }
 
@@ -1227,7 +1230,7 @@
   .custom-table tbody tr td:first-child {
     width: 38%;
     text-align: left;
-    padding: 10px 8px;
+    padding: 12px 8px;
     align-self: center;
     font-size: 11px;
   }
@@ -1426,8 +1429,8 @@
   }
 
   .vertical-bullets {
-    height: calc(100vh - 49px) !important;
-    top: 49px !important;
+    height: unset !important;
+    top: 25% !important;
     width: 30px !important;
   }
 
@@ -1712,7 +1715,7 @@
   .custom-table tbody tr td:first-child {
     width: 36% !important;
     text-align: left !important;
-    padding: 8px 8px !important;
+    padding: 14px 8px !important;
     align-self: center !important;
     font-size: 10px !important;
   }
@@ -1960,7 +1963,7 @@
     padding: 5px 4px;
   }
   .custom-table tbody tr td:first-child {
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
   .logo-placeholder {
     padding: 0px 0px;

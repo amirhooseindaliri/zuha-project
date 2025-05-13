@@ -202,12 +202,6 @@
   font-size: 16px;
 }
 
-.custom-table tr {
-  border: none !important;
-}
-.custom-table tbody tr{
-  border: 1px solid black;
-}
 
 .custom-table {
   border-collapse: collapse;
@@ -216,11 +210,6 @@
   display: inline-table;
 }
 
-.custom-table tr,
-.custom-table td,
-.custom-table th {
-  border: none !important;
-}
 
 .custom-table-date {
   display: flex;
@@ -235,7 +224,7 @@
 .custom-table tbody tr td:first-child {
   width: 50%;
   text-align: left;
-  padding: 10px 20px;
+  padding: 14px 20px;
   align-self: center;
 }
 
