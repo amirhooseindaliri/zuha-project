@@ -193,13 +193,13 @@
   }
 
   .custom-table-header {
-    font-size: 14px;
+    font-size: 14px !important;
     padding: 0px 20px;
     height: 42px;
   }
 
   .custom-table {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .custom-table th,
@@ -211,11 +211,13 @@
   .cell-up,
   .cell-down {
     padding: 4px 12px;
+    font-size: 14px;
   }
 
   .custom-value-box {
     font-size: 14px;
     width: fit-content;
+    padding: 4px 28px !important;
   }
 
   .calc-tool-container {
@@ -238,10 +240,13 @@
   .etik-message-container {
     min-width: 968px;
   }
+  .custom-table tbody tr td:first-child {
+    padding: 9px 20px;
+  }
 
   .custom-table tbody tr td:nth-child(2),
   .custom-table tbody tr td:nth-child(3) {
-    padding: 10px 4px;
+    padding: 7px 4px;
   }
 
   .custom-table thead tr th:nth-child(2),
@@ -309,6 +314,13 @@
   .custom-table td {
     padding: 8px 12px;
     width: 36.33%;
+  }
+  .custom-table tbody tr td:first-child {
+    padding: 9px 20px !important;
+  }
+  .custom-table tbody tr td:nth-child(2),
+  .custom-table tbody tr td:nth-child(3) {
+    padding: 5px 0px !important;
   }
 
   .custom-value-box,
@@ -397,21 +409,6 @@
     margin-top: 2px;
   }
 
-  .compliance-columns {
-    gap: 0px;
-    flex-direction: column;
-  }
-
-  .compliance-divider {
-    display: none;
-  }
-
-  .compliance-right {
-    margin-top: 16px;
-    border-top: 2px solid #d9d9d9;
-    align-self: flex-start;
-    padding-top: 16px;
-  }
   .services-item-box {
     padding: 15px 15px !important;
   }
@@ -429,6 +426,21 @@
 }
 
 @media (max-width: 1024px) {
+  .compliance-columns {
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .compliance-divider {
+    display: none;
+  }
+
+  .compliance-right {
+    margin-top: 16px;
+    border-top: 2px solid #d9d9d9;
+    align-self: flex-start;
+    padding-top: 16px;
+  }
   .vertical-bullets {
     height: calc(100vh - 59px) !important;
     top: 74px !important;
@@ -643,11 +655,12 @@
     display: block;
     overflow-y: auto;
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     position: relative;
     justify-content: unset;
     align-items: unset;
     text-align: left;
+    transition: height 0.3s ease-in-out;
   }
 
   .tables-container::-webkit-scrollbar {
@@ -669,12 +682,15 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
   }
 
   .custom-table-card {
     width: 100%;
     margin: 0;
     max-width: 70vw;
+    transition: transform 0.3s ease-in-out;
   }
 
   .custom-table {
@@ -1273,7 +1289,7 @@
 
   .cell-up,
   .cell-down {
-    font-size: 14px;
+    font-size: 11px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1281,7 +1297,7 @@
   }
 
   .custom-value-box {
-    font-size: 14px;
+    font-size: 11px;
     width: fit-content;
     padding: 4px 17px;
   }
@@ -1292,6 +1308,7 @@
 
   .compliance-title {
     white-space: normal;
+    font-size: 12px !important;
   }
 
   .compliance-columns {
@@ -1315,6 +1332,9 @@
   }
   .compliance-title small {
     font-size: 10px !important;
+  }
+  .compliance-list li {
+    font-size: 12px;
   }
   .compliance-bar {
     min-width: 30px;
@@ -1914,7 +1934,7 @@
   }
 
   .compliance-title {
-    font-size: 16px;
+    font-size: 22px;
     margin-right: 0px;
     margin-left: 8px;
   }
@@ -1950,13 +1970,18 @@
 @media (min-height: 800px) {
   .clock-time,
   .clock-date {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
 @media (min-width: 1024px) and (max-height: 777px) {
+  .vertical-bullets {
+    height: calc(100vh - 59px) !important;
+    top: unset !important;
+    width: 40px;
+  }
   .sidebar {
-    top: 50%;
+    top: 54%;
     gap: 4px;
   }
   .sidebar-item {
@@ -1965,13 +1990,40 @@
   }
   .custom-table tbody tr td:nth-child(2),
   .custom-table tbody tr td:nth-child(3) {
-    padding: 5px 4px;
+    padding: 3px 4px;
   }
   .custom-table tbody tr td:first-child {
-    padding: 10px 20px;
+    padding: 7px 20px;
+  }
+  .tables-container td {
+    font-size: 14px !important;
+  }
+  .cell-up,
+  .cell-down,
+  .custom-value-box {
+    font-size: 14px !important;
+  }
+  .custom-table tbody {
+    padding: 4px 0px;
+  }
+  .section::before {
+    bottom: 64px;
+    top: 64px;
+  }
+  .about-us-container {
+    margin: 20px auto 20px auto;
+  }
+  .cell-up,
+  .cell-down {
+    padding: 4px 22px;
   }
   .logo-placeholder {
     padding: 0px 0px;
+    width: 250px;
+    height: 53px;
+  }
+  .main-header {
+    background-color: transparent;
   }
   .services-item-left {
     gap: 12px !important;
@@ -2006,5 +2058,9 @@
   }
   .etik-message-btn {
     margin-top: 0px;
+  }
+  .clock-time,
+  .clock-date {
+    font-size: 16px;
   }
 }

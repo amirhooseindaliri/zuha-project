@@ -20,7 +20,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2000;
   padding: 20px 40px;
   background: transparent;
   padding-bottom: 30px;

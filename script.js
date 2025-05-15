@@ -156,7 +156,7 @@ if ((hamburger || hamburger_mobile) && sidebar && closeBtn) {
 // Table-step bullet navigation for Section 1 (responsive, 768px and below)
 document.addEventListener("DOMContentLoaded", function () {
   // Find all sections with tables-container
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const container = section.querySelector(".tables-container");
     const tableSteps = section.querySelectorAll(".table-step");
     const tableBullets = section.querySelectorAll(".table-bullet");
@@ -188,11 +188,39 @@ document.addEventListener("DOMContentLoaded", function () {
       tableBullets.forEach((bullet, idx) => {
         bullet.addEventListener("click", () => {
           if (!isMobile()) return;
-          tableSteps[idx].scrollIntoView({ behavior: "smooth", block: "start" });
+          tableSteps[idx].scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
         });
       });
       // Initial state
       updateTableBullets();
     }
   });
+});
+
+// Add keyboard navigation
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+    e.preventDefault(); // Prevent default scrolling behavior
+
+    const currentActiveSection = document.querySelector(".section.active");
+    if (!currentActiveSection) return;
+
+    const currentIndex = Array.from(sections).indexOf(currentActiveSection);
+    let targetIndex;
+
+    if (e.key === "ArrowUp") {
+      targetIndex = Math.max(0, currentIndex - 1);
+    } else {
+      targetIndex = Math.min(sections.length - 1, currentIndex + 1);
+    }
+
+    const targetSection = sections[targetIndex];
+    if (targetSection) {
+      updateActiveStates(targetSection.id);
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 });
