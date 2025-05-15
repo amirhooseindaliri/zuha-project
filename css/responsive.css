@@ -149,6 +149,9 @@
   .clock-box {
     display: none;
   }
+  .tables-container {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -352,7 +355,7 @@
 
   .tables-container {
     margin-top: 1.5rem;
-    margin-right: 1.5rem;
+    margin-right: 2.5rem;
   }
 
   .section::before {
@@ -651,28 +654,39 @@
 }
 
 @media (max-width: 860px) {
-  .tables-container {
+  .just-show-mobile {
+    display: flex;
+  }
+  .just-show-not-mobile {
+    display: none;
+  }
+  .just-show-block-mobile {
     display: block;
-    overflow-y: auto;
+  }
+  .just-show-block-not-mobile {
+    display: none;
+  }
+  .tables-container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
     height: 100vh;
-    scroll-snap-type: y proximity;
-    position: relative;
-    justify-content: unset;
-    align-items: unset;
-    text-align: left;
-    transition: height 0.3s ease-in-out;
   }
 
-  .tables-container::-webkit-scrollbar {
+  /* .tables-container::-webkit-scrollbar {
     width: 8px;
     background: transparent;
   }
 
   .tables-container::-webkit-scrollbar-thumb {
     background: transparent;
-  }
+  } */
 
-  .table-step {
+  /* .table-step {
     min-height: 100vh;
     scroll-snap-align: start;
     padding-bottom: 32px;
@@ -684,12 +698,13 @@
     text-align: left;
     transition: transform 0.3s ease-in-out;
     will-change: transform;
-  }
+  } */
 
   .custom-table-card {
     width: 100%;
     margin: 0;
     max-width: 70vw;
+    min-width: 70vw;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -935,6 +950,20 @@
     height: 2vh;
   }
 }
+@media (min-width: 861px) {
+  .just-show-mobile {
+    display: none;
+  }
+  .just-show-not-mobile {
+    display: flex;
+  }
+  .just-show-block-mobile {
+    display: none;
+  }
+  .just-show-block-not-mobile {
+    display: block;
+  }
+}
 
 @media (max-width: 433px) {
   .tables-container {
@@ -943,7 +972,9 @@
 
   .table-step {
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 3.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 4rem;
   }
 
   .main-header {
@@ -959,7 +990,7 @@
     width: 100%;
     box-sizing: border-box;
     min-height: 48px;
-    z-index: 1000;
+    z-index: 2000;
     position: fixed;
     top: 0;
     left: 0;
@@ -989,8 +1020,8 @@
   }
 
   .vertical-bullets {
-    height: unset !important;
-    top: 25% !important;
+    height: 100vh !important;
+    top: 0% !important;
     width: 40px;
   }
 
@@ -1166,7 +1197,7 @@
   }
 
   iframe {
-    height: 147px !important;
+    height: 94px !important;
   }
 
   .about-us-title {
@@ -1406,6 +1437,21 @@
   }
   .services-item-title {
     width: 100% !important;
+  }
+  #section1-table-1,
+  #section1-table-2,
+  #section2-table-1,
+  #section2-table-2,
+  #section3-table-1,
+  #section3-table-2,
+  #section4-table-1,
+  #section4-table-2,
+  #section5-table-1,
+  #section5-table-2 {
+    align-items: normal !important;
+  }
+  .etik-message-textarea {
+    min-height: 44px;
   }
 }
 

@@ -25,7 +25,10 @@ function updateActiveStates(currentSection) {
   // Update sidebar items
   navItems.forEach((item) => {
     item.classList.remove("active");
-    if (item.getAttribute("href").slice(1) === currentSection) {
+    if (
+      item.getAttribute("href").slice(1) === currentSection ||
+      item.getAttribute("data-sub") === currentSection
+    ) {
       item.classList.add("active");
     }
   });
@@ -104,8 +107,10 @@ bullets.forEach((bullet) => {
 // Set initial active state based on URL hash
 document.addEventListener("DOMContentLoaded", () => {
   const hash = window.location.hash.slice(1);
+
   if (hash) {
     const section = document.getElementById(hash);
+
     if (section) {
       // Add transitioning class to all sections
       sections.forEach((s) => s.classList.add("transitioning"));
@@ -119,7 +124,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Default to first section if no hash
     sections.forEach((s) => s.classList.remove("active"));
     sections[0].classList.add("active");
-    updateActiveStates("section1");
+    if (window.innerWidth <= 860) {
+      updateActiveStates("section1-table-1");
+    } else {
+      updateActiveStates("section1");
+    }
   }
 });
 
@@ -129,15 +138,19 @@ const hamburger_mobile = document.getElementById("hamburger_mobile");
 
 const sidebar = document.getElementById("sidebar-nav");
 const closeBtn = document.getElementById("close-sidebar");
+const sidebarMobile = document.getElementById("sidebar-nav-mobile");
+const closeBtnMobile = document.getElementById("close-sidebar-mobile");
 
 if ((hamburger || hamburger_mobile) && sidebar && closeBtn) {
   // Open sidebar
   hamburger.addEventListener("click", () => {
     sidebar.classList.add("open");
+    sidebarMobile.classList.add("open");
   });
 
   hamburger_mobile.addEventListener("click", () => {
     sidebar.classList.add("open");
+    sidebarMobile.classList.add("open");
   });
 
   // Close sidebar
@@ -151,54 +164,65 @@ if ((hamburger || hamburger_mobile) && sidebar && closeBtn) {
       sidebar.classList.remove("open");
     });
   });
+  // Close sidebar
+  closeBtnMobile.addEventListener("click", () => {
+    sidebarMobile.classList.remove("open");
+  });
+
+  // Close sidebar when a menu item is clicked
+  sidebarMobile.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      sidebarMobile.classList.remove("open");
+    });
+  });
 }
 
 // Table-step bullet navigation for Section 1 (responsive, 768px and below)
-document.addEventListener("DOMContentLoaded", function () {
-  // Find all sections with tables-container
-  sections.forEach((section) => {
-    const container = section.querySelector(".tables-container");
-    const tableSteps = section.querySelectorAll(".table-step");
-    const tableBullets = section.querySelectorAll(".table-bullet");
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Find all sections with tables-container
+//   sections.forEach((section) => {
+//     const container = section.querySelector(".tables-container");
+//     const tableSteps = section.querySelectorAll(".table-step");
+//     const tableBullets = section.querySelectorAll(".table-bullet");
 
-    // Only activate on small screens
-    function isMobile() {
-      return window.innerWidth <= 860;
-    }
+//     // Only activate on small screens
+//     function isMobile() {
+//       return window.innerWidth <= 860;
+//     }
 
-    function updateTableBullets() {
-      if (!isMobile()) return;
-      let activeIndex = 0;
-      tableSteps.forEach((step, idx) => {
-        const rect = step.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
-        if (rect.top < containerRect.top + containerRect.height / 2) {
-          activeIndex = idx;
-        }
-      });
-      tableBullets.forEach((b, i) =>
-        b.classList.toggle("active", i === activeIndex)
-      );
-    }
+//     function updateTableBullets() {
+//       if (!isMobile()) return;
+//       let activeIndex = 0;
+//       tableSteps.forEach((step, idx) => {
+//         const rect = step.getBoundingClientRect();
+//         const containerRect = container.getBoundingClientRect();
+//         if (rect.top < containerRect.top + containerRect.height / 2) {
+//           activeIndex = idx;
+//         }
+//       });
+//       tableBullets.forEach((b, i) =>
+//         b.classList.toggle("active", i === activeIndex)
+//       );
+//     }
 
-    if (container && tableSteps.length && tableBullets.length) {
-      container.addEventListener("scroll", updateTableBullets);
-      window.addEventListener("resize", updateTableBullets);
-      // Bullet click scrolls to table-step
-      tableBullets.forEach((bullet, idx) => {
-        bullet.addEventListener("click", () => {
-          if (!isMobile()) return;
-          tableSteps[idx].scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        });
-      });
-      // Initial state
-      updateTableBullets();
-    }
-  });
-});
+//     if (container && tableSteps.length && tableBullets.length) {
+//       container.addEventListener("scroll", updateTableBullets);
+//       window.addEventListener("resize", updateTableBullets);
+//       // Bullet click scrolls to table-step
+//       tableBullets.forEach((bullet, idx) => {
+//         bullet.addEventListener("click", () => {
+//           if (!isMobile()) return;
+//           tableSteps[idx].scrollIntoView({
+//             behavior: "smooth",
+//             block: "start",
+//           });
+//         });
+//       });
+//       // Initial state
+//       updateTableBullets();
+//     }
+//   });
+// });
 
 // Add keyboard navigation
 document.addEventListener("keydown", (e) => {
