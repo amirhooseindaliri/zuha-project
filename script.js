@@ -6,6 +6,7 @@ const scrollContainer = document.querySelector(".scroll-container");
 
 // Function to update active states and URL
 function updateActiveStates(currentSection) {
+  console.log('version: 1.0.9');
   // Update URL
   history.pushState(null, null, `#${currentSection}`);
 

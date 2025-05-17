@@ -184,7 +184,7 @@ html {
 }
 
 .section:not(.active) {
-  transform: translateZ(-100px) scale(0.9);
+  /*transform: translateZ(-100px) scale(0.9);*/
   opacity: 0.5;
   pointer-events: none;
 }
