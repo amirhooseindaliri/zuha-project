@@ -20,29 +20,73 @@
 
 @media (min-width: 1440px) and (max-width: 1920px) {
   .vertical-bullets {
-    height: calc(100vh - 59px) !important;
-    top: 8vh !important;
-    right: 2%;
+    height: calc(100vh) !important;
+    top: 0 !important;
+    right: 3%;
     width: 40px;
   }
 
   .logo-placeholder {
     width: 100%;
-    height: 6vh;
+    height: 7vh;
+    padding: 0;
   }
 
   .main-header {
     padding: 12px 24px;
-      .header-right {
-       .hamburger-menu {
-           align-items: center;
-       }
+    .header-right {
+      .info-phone-clock {
+        flex-direction: column;
+        gap: 0;
+
+        .phone-box {
+          width: 100%;
+          .icon-phone {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .clock-box {
+          display: flex;
+          padding: 0;
+          gap: 0;
+
+          .clock-time{
+            font-size: 1.2vw;
+            font-weight: 500;
+          }
+          .clock-date{
+            font-size: 1.2vw;
+            font-weight: 500;
+          }
+        }
       }
+     .hamburger-menu {
+       flex: 1;
+     }
+    }
   }
 
-  .icon-phone {
-    width: 136px;
-    height: 27px;
+  .header-content {
+    justify-content: space-between;
+  }
+
+  .footer-content {
+    justify-content: space-between;
+    .footer-left {
+      img {
+        height: 6vh;
+        width: 100%;
+      }
+    }
+
+    .footer-right {
+      img {
+        height: 6vh;
+        width: 100%;
+      }
+    }
   }
 
   .info-phone-clock {
@@ -52,7 +96,7 @@
   }
 
   .sidebar {
-    gap: .6vh;
+    gap: .65vh;
     top: 50%;
   }
 
@@ -61,6 +105,10 @@
         width: 3vh;
         height: 3vh;
       }
+  }
+
+  .custom-table-card {
+    min-width: 42vw;
   }
 
   .custom-table-header {
@@ -88,18 +136,6 @@
 
   }
 
-  .clock-box {
-    display: flex;
-      .clock-time{
-          font-size: 1.3vw;
-          font-weight: 600;
-      }
-      .clock-date{
-          font-size: 1.3vw;
-          font-weight: 600;
-      }
-  }
-
   .clock-box-tablet-screen {
     display: none;
   }
@@ -120,9 +156,6 @@
   .header-content {
     padding-right: 0rem;
     padding-left: 0rem;
-  }
-  .header-content {
-    justify-content: space-around;
   }
 }
 
@@ -178,6 +211,7 @@
   .vertical-bullets {
     height: calc(100vh - 59px) !important;
     top: 74px;
+    right: 2%;
     width: 40px;
   }
 
