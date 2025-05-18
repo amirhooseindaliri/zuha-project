@@ -1,5 +1,6 @@
 // Get all necessary elements
 const sections = document.querySelectorAll(".section");
+const sectionsJustNotShowMobiles = document.querySelectorAll(".section.arrow-section");
 const navItems = document.querySelectorAll(".sidebar-item");
 const bullets = document.querySelectorAll(".bullet");
 const scrollContainer = document.querySelector(".scroll-container");
@@ -227,25 +228,28 @@ if ((hamburger || hamburger_mobile) && sidebar && closeBtn) {
 
 // Add keyboard navigation
 document.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowUp" || e.key === "ArrowDown") {
-    e.preventDefault(); // Prevent default scrolling behavior
+  if (window.innerWidth >= 860) {
 
-    const currentActiveSection = document.querySelector(".section.active");
-    if (!currentActiveSection) return;
+    if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+      e.preventDefault(); // Prevent default scrolling behavior
 
-    const currentIndex = Array.from(sections).indexOf(currentActiveSection);
-    let targetIndex;
+      const currentActiveSection = document.querySelector(".section.arrow-section.active");
+      if (!currentActiveSection) return;
 
-    if (e.key === "ArrowUp") {
-      targetIndex = Math.max(0, currentIndex - 1);
-    } else {
-      targetIndex = Math.min(sections.length - 1, currentIndex + 1);
-    }
+      const currentIndex = Array.from(sectionsJustNotShowMobiles).indexOf(currentActiveSection);
+      let targetIndex;
 
-    const targetSection = sections[targetIndex];
-    if (targetSection) {
-      updateActiveStates(targetSection.id);
-      targetSection.scrollIntoView({ behavior: "smooth" });
+      if (e.key === "ArrowUp") {
+        targetIndex = Math.max(0, currentIndex - 1);
+      } else {
+        targetIndex = Math.min(sectionsJustNotShowMobiles.length - 1, currentIndex + 1);
+      }
+
+      const targetSection = sectionsJustNotShowMobiles[targetIndex];
+      if (targetSection) {
+        updateActiveStates(targetSection.id);
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }
 });
