@@ -167,7 +167,3 @@
   top: 49px !important;
   width: 40px;
 }
-
-@media (max-width: 900px) {
-  /* Remove contact-footer-container responsive styles from here */
-}

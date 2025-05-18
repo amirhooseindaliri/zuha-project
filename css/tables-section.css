@@ -95,23 +95,23 @@
 
 .cell-up {
   display: inline-block;
-  background: #d3f0e3;
+  background: #008053;
   border-radius: 12px;
   padding: 4px 8px;
   font-size: 16px;
-  font-weight: 700;
-  color: #1c7319;
+  font-weight: 600;
+  color: #fff;
   text-align: left;
 }
 
 .cell-down {
   display: inline-block;
-  background: #ffd9d9;
+  background: #e03131;
   border-radius: 12px;
   padding: 4px 8px;
   font-size: 16px;
-  font-weight: 700;
-  color: #ff0000;
+  font-weight: 600;
+  color: #fff;
   text-align: left;
 }
 
