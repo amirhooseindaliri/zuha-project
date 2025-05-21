@@ -24,15 +24,18 @@
         top: 8vh !important;
         right: 2%;
         width: 40px;
+
         ul {
             .bullet {
                 width: 10px;
                 height: 10px;
             }
+
             .bullet.active::before {
                 width: 12px;
                 height: 12px
             }
+
             .bullet.active {
                 width: 24px;
                 height: 24px
@@ -228,8 +231,8 @@
     }
 
     .info-phone-clock {
-        flex-direction: row-reverse;
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .sidebar {
@@ -362,9 +365,25 @@
         padding: 4px 20px;
     }
 
-    .clock-box {
-        display: none;
+    .info-phone-clock {
+        align-items: center;
+        gap: 0;
+        flex-direction: column;
+
+        .phone-box {
+            img {
+                width: auto;
+                height: 5vh;
+            }
+        }
+
+        .clock-box {
+            .clock-time, .clock-date {
+                font-size: 12px;
+            }
+        }
     }
+
 
     .icon-phone {
         width: 100%;
@@ -414,11 +433,6 @@
 
     .custom-table-card {
         min-width: 41vw;
-    }
-
-    .info-phone-clock {
-        align-items: center;
-        flex-direction: row-reverse;
     }
 
     .custom-table tbody {
@@ -572,7 +586,7 @@
     }
 
     .info-phone-clock {
-        flex-direction: row-reverse;
+        flex-direction: column;
     }
 
     .custom-table tbody {
@@ -942,10 +956,6 @@
         margin-right: 1.5rem;
     }
 
-    .clock-box {
-        display: none;
-    }
-
     .description-text {
         font-size: 16px;
         color: #fff;
@@ -1035,8 +1045,8 @@
     }
 
     .logo-placeholder {
-        width: auto;
-        height: 4vh;
+        width: 25vw;
+        height: auto;
     }
 
     .icon-phone {
@@ -1069,8 +1079,7 @@
     }
 
     .table-step {
-        justify-content: center;
-        margin-left: 5rem;
+        margin-left: 12vw;
         margin-right: 1.5rem;
         margin-bottom: 4rem;
     }
@@ -1104,17 +1113,19 @@
 
     .info-phone-clock {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding-top: 8px;
         width: 100%;
-    }
 
-    .phone-box {
-        img {
-            width: 100%;
-            height: 24px;
+        .phone-box {
+            img {
+                width: 100%;
+                height: 4vh;
+            }
         }
+
     }
 
     .clock-box {
@@ -1156,7 +1167,7 @@
 
     .vertical-bullets {
         height: 100vh !important;
-        top: 5% !important;
+        top: 0 !important;
         right: 2%;
         width: 40px;
     }
@@ -1431,7 +1442,7 @@
         padding: 12px 8px;
         align-self: center;
         font-size: 11px;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .custom-table tbody tr td:nth-child(2),
@@ -1614,517 +1625,536 @@
 }
 
 @media (max-width: 376px) {
-  .tables-container {
-    margin: 0px 0px 0px 1rem !important;
-  }
-
-  .table-step {
-    justify-content: center !important;
-      margin-left: 2.5rem;
-  }
-
-  .main-header {
-    display: none !important;
-  }
-
-  .mobile-header {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    background: #081028 !important;
-    padding: 8px 16px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    min-height: 48px !important;
-    z-index: 1000 !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-  }
-
-  .mobile-logo-zuha {
-    width: 165px !important;
-    height: 33px !important;
-    object-fit: contain !important;
-  }
-
-  .mobile-logo-borsa {
-    height: 28px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    margin-left: 12px !important;
-  }
-
-  .footer-logo-two,
-  .footer-logo-two-wrapper {
-    display: none !important;
-  }
-
-  .scroll-container {
-    height: calc(100vh - 49px) !important;
-    margin-top: 49px !important;
-  }
-
-  .vertical-bullets {
-    height: unset !important;
-    top: 25% !important;
-    width: 30px !important;
-  }
-
-  .table-section .custom-table-card {
-    max-width: 72vw !important;
-    min-width: unset !important;
-    margin: 1rem auto 4rem auto !important;
-    box-sizing: border-box !important;
-  }
-
-  .custom-table {
-    width: 100% !important;
-  }
-
-  .custom-table-header {
-    font-size: 10px !important;
-  }
-
-  .custom-table-header-item {
-    font-size: 10px !important;
-  }
-
-  .sidebar {
-    width: 35px !important;
-    padding: 8px 4px !important;
-    gap: 6px !important;
-    top: 55% !important
-  }
-
-  .sidebar-item {
-    width: 30px !important;
-    height: 30px !important;
-  }
-
-  .trend-up-icon,
-  .trend-down-icon {
-    width: 10px !important;
-    height: 10px !important;
-  }
-
-  .sidebar-nav {
-    width: 264px !important;
-  }
-
-  .sidebar-nav a {
-    font-size: 20px !important;
-  }
-
-  .section::before {
-    background: transparent !important;
-  }
-
-  .main-footer {
-    padding: 10px 0px 18px 18px !important;
-  }
-
-  .trend-up-icon {
-    display: none !important;
-  }
-
-  .trend-down-icon {
-    display: none !important;
-  }
-
-  .trend-down-icon-mobile {
-    display: block !important;
-    height: 6px !important;
-    width: 6px !important;
-    margin-left: 8px !important;
-  }
-
-  .trend-up-icon-mobile {
-    display: block !important;
-    height: 6px !important;
-    width: 6px !important;
-    margin-left: 8px !important;
-  }
-
-  .left-side-calc-tool {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .right-side-calc-tool {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .calc-tool-container {
-    max-width: 71vw !important;
-    margin-left: 2.5rem !important;
-    margin-bottom: 4rem !important;
-    margin-top: 0px !important;
-  }
-
-  .left-side-calc-tool {
-    flex-direction: column !important;
-    width: 100% !important;
-  }
-
-  .right-side-calc-tool {
-    flex-direction: column !important;
-    width: 100% !important;
-  }
-
-  .calc-tool-input {
-    width: 92% !important;
-    padding: 4px 10px;
-  }
-
-  .calc-tool-summary-input {
-    width: 66% !important;
-    padding: 6px 10px !important;
-    height: 20px !important;
-  }
-
-  .calc-tool-select {
-    width: 100% !important;
-    padding: 4px 10px;
-  }
-
-  .calc-tool-content {
-    flex-direction: column !important;
-    padding: 8px !important;
-    gap: 4px !important;
-  }
-
-  .calc-tool-rate {
-    padding: 4px 10px !important;
-  }
-
-  .calc-tool-summary-label {
-    font-size: 12px !important;
-    margin-right: 0px !important;
-    margin-left: 10px !important;
-  }
-
-  .calc-tool-col {
-    width: 100% !important;
-  }
-
-  .right-side-calc-tool {
-    gap: 4px !important;
-  }
-  .calc-tool-header {
-    padding: 8px 20px;
-    font-size: 12px;
-  }
-
-  .calc-tool-summary-row {
-    flex-direction: column !important;
-    align-items: start !important;
-    padding: 10px 0px !important;
-    width: 100% !important;
-    margin-bottom: 12px !important;
-  }
-
-  .calc-tool-add-row {
-    margin-top: 0px !important;
-  }
-
-  .about-us-container {
-    max-width: 73vw !important;
-    padding: 14px !important;
-    flex-direction: column !important;
-    gap: 16px !important;
-    margin-top: 0px !important;
-    border-radius: 18px !important;
-    margin-bottom: 0px !important;
-    margin-left: 2.5rem !important;
-  }
-
-  .about-us-item {
-    font-size: 10px !important;
-  }
-
-  iframe {
-    height: 120px !important;
-  }
-
-  .about-us-title {
-    font-size: 12px !important;
-    margin-bottom: 4px !important;
-  }
-
-  .about-us-bar {
-    width: 22px !important;
-    height: 22px !important;
-  }
-
-  .about-us-location {
-    font-size: 14px !important;
-  }
-
-  .about-us-icon {
-    margin-right: 14px !important;
-    width: 16px !important;
-    height: 16px !important;
-    padding: 7px !important;
-  }
-
-  .about-us-list {
-    gap: 5px !important;
-  }
-
-  .about-us-message-box {
-    margin-left: 0px !important;
-  }
-
-  .about-us-left {
-    flex-direction: column !important;
-  }
-
-  .wrapper-social {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-    align-self: start !important;
-  }
-
-  .about-us-socials img {
-    margin-left: 0px !important;
-  }
-
-  .about-us-message-box {
-    margin-top: 0px !important;
-    padding: 4px 8px !important;
-    font-size: 10px !important;
-  }
-
-  .about-us-right {
-    width: 100% !important;
-  }
-
-  .etik-message-header {
-    font-size: 10px !important;
-  }
-
-  .etik-message-container {
-    min-width: 72vw !important;
-    margin-bottom: 6rem !important;
-    margin-left: 2.5rem;
-    padding-bottom: 5px;
-  }
-
-  .etik-message-btn {
-    margin-top: 15px !important;
-    width: 100% !important;
-    height: 36px !important;
-    margin: auto !important;
-  }
-
-  .etik-message-row {
-    flex-direction: column !important;
-  }
-
-  .etik-message-form {
-    padding: 12px !important;
-  }
-
-  .etik-message-input,
-  .etik-message-textarea {
-    padding: 4px 8px !important;
-  }
-
-  .etik-message-label {
-    font-size: 10px !important;
-  }
-
-  .custom-table-header {
-    height: 37px !important;
-  }
-
-  .custom-table thead tr th:first-child {
-    width: 50% !important;
-    text-align: left !important;
-    padding: 8px 8px !important;
-    font-size: 10px !important;
-  }
-
-  .custom-table tbody tr td:first-child {
-    width: 36% !important;
-    text-align: left !important;
-    padding: 14px 8px !important;
-    align-self: center !important;
-    font-size: 10px !important;
-  }
-
-  .custom-table tbody tr td:nth-child(2),
-  .custom-table tbody tr td:nth-child(3) {
-    width: 32% !important;
-    text-align: center !important;
-    padding: 8px 4px !important;
-    font-size: 10px !important;
-  }
-
-  .custom-table thead tr th:nth-child(2),
-  .custom-table thead tr th:nth-child(3) {
-    width: 25% !important;
-    text-align: left !important;
-    padding: 8px 8px !important;
-    font-size: 10px !important;
-  }
-
-  .custom-table thead {
-    padding: 8px 0px !important;
-  }
-  .custom-value-box {
-    font-size: 10px;
-    padding: 6px 18px !important;
-  }
-  .cell-up,
-  .cell-down {
-    font-size: 10px !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 6px 8px !important;
-  }
-
-  .custom-table tbody {
-    max-height: 573px !important;
-  }
-
-  .calc-tool-header {
-    font-size: 11px !important;
-    padding: 12px 20px !important;
-  }
-
-  .compliance-section {
-    padding: 0px 0 47px 0;
-  }
-
-  .compliance-columns {
-    gap: 0px;
-    flex-direction: column;
-    max-width: 240px !important;
-    margin-left: 2.3rem !important;
-    margin-top: 0px !important;
-    margin-bottom: 10px !important;
-  }
-  .compliance-header {
-    margin-top: 10px !important;
-  }
-
-  .compliance-divider {
-    display: none;
-  }
-
-  .compliance-right {
-    margin-top: 12px;
-    border-top: 2px solid #d9d9d9;
-    align-self: flex-start;
-    padding-top: 16px;
-  }
-
-  .compliance-title {
-    font-size: 12px;
-    margin-right: 0px;
-    margin-left: 8px;
-  }
-  .compliance-title small {
-    font-size: 10px !important;
-  }
-
-  .compliance-bar {
-    min-width: 30px;
-    width: 50px;
-    height: 12px;
-    margin-right: 0px;
-  }
-  .compliance-right {
-    margin-top: 10px !important;
-    padding-top: 0px !important;
-  }
-
-  .compliance-list {
-    margin-top: 12px;
-  }
-
-  .compliance-list li {
-    font-size: 12px;
-  }
-
-  .compliance-contact {
-    font-size: 12px;
-    margin-top: 10px;
-    max-width: 240px !important;
-    margin-left: 2.3rem !important;
-    margin-top: 0px !important;
-  }
-  .compliance-header {
-    margin-top: 10px !important;
-  }
-  .compliance-list {
-    margin-top: 10px !important;
-  }
-
-  .description-text {
-    font-size: 12px;
-    color: #fff;
-    line-height: 150%;
-    text-align: justify;
-  }
-  .services-item-box {
-    padding: 15px 15px !important;
-    gap: 14px;
-    flex-direction: column;
-    max-height: 60vh;
-    overflow-y: auto;
-    max-width: 72vw !important;
-    min-width: unset !important;
-    margin: 1rem auto 4rem auto;
-    box-sizing: border-box;
-  }
-  .services-title {
-    margin-bottom: 14px !important;
-    font-size: 18px !important;
-    margin-top: 0px;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-  .services-header {
-    font-size: 15px !important;
-    padding: 12px 24px !important;
-  }
-  .services-item-value {
-    height: 32px !important;
-    width: 100% !important;
-    font-size: 10px !important;
-  }
-  .services-container {
-    min-width: 78% !important;
-    margin: 32px auto 32px 3rem !important;
-  }
-  .services-item-left {
-    width: 100% !important;
-    gap: 14px !important;
-  }
-  .services-item-right {
-    width: 100% !important;
-    gap: 14px !important;
-  }
-  .services-item-row {
-    flex-direction: column;
-    align-items: start !important;
-    gap: 14px;
-  }
-  .services-item-title {
-    width: 100% !important;
-  }
-  .section-single-content-container {
-    width: 70%;
-    margin-left: 2rem !important;
-  }
-  .hamburger-menu {
-    margin-left: 16px;
-  }
+    .tables-container {
+        margin: 0px 0px 0px 1rem !important;
+    }
+
+    .table-step {
+        justify-content: center !important;
+        margin-left: 2.5rem;
+    }
+
+    .main-header {
+        display: none !important;
+    }
+
+    .mobile-header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        background: #081028 !important;
+        padding: 8px 16px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        min-height: 48px !important;
+        z-index: 1000 !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .mobile-logo-zuha {
+        width: 165px !important;
+        height: 33px !important;
+        object-fit: contain !important;
+    }
+
+    .mobile-logo-borsa {
+        height: 28px !important;
+        width: auto !important;
+        object-fit: contain !important;
+        margin-left: 12px !important;
+    }
+
+    .footer-logo-two,
+    .footer-logo-two-wrapper {
+        display: none !important;
+    }
+
+    .scroll-container {
+        height: calc(100vh - 49px) !important;
+        margin-top: 49px !important;
+    }
+
+    .vertical-bullets {
+        height: unset !important;
+        top: 25% !important;
+        width: 30px !important;
+    }
+
+    .table-section .custom-table-card {
+        max-width: 72vw !important;
+        min-width: unset !important;
+        margin: 1rem auto 4rem auto !important;
+        box-sizing: border-box !important;
+    }
+
+    .custom-table {
+        width: 100% !important;
+    }
+
+    .custom-table-header {
+        font-size: 10px !important;
+    }
+
+    .custom-table-header-item {
+        font-size: 10px !important;
+    }
+
+    .sidebar {
+        width: 35px !important;
+        padding: 8px 4px !important;
+        gap: 6px !important;
+        top: 55% !important
+    }
+
+    .sidebar-item {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .trend-up-icon,
+    .trend-down-icon {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .sidebar-nav {
+        width: 264px !important;
+    }
+
+    .sidebar-nav a {
+        font-size: 20px !important;
+    }
+
+    .section::before {
+        background: transparent !important;
+    }
+
+    .main-footer {
+        padding: 10px 0px 18px 18px !important;
+    }
+
+    .trend-up-icon {
+        display: none !important;
+    }
+
+    .trend-down-icon {
+        display: none !important;
+    }
+
+    .trend-down-icon-mobile {
+        display: block !important;
+        height: 6px !important;
+        width: 6px !important;
+        margin-left: 8px !important;
+    }
+
+    .trend-up-icon-mobile {
+        display: block !important;
+        height: 6px !important;
+        width: 6px !important;
+        margin-left: 8px !important;
+    }
+
+    .left-side-calc-tool {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .right-side-calc-tool {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .calc-tool-container {
+        max-width: 71vw !important;
+        margin-left: 2.5rem !important;
+        margin-bottom: 4rem !important;
+        margin-top: 0px !important;
+    }
+
+    .left-side-calc-tool {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .right-side-calc-tool {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .calc-tool-input {
+        width: 92% !important;
+        padding: 4px 10px;
+    }
+
+    .calc-tool-summary-input {
+        width: 66% !important;
+        padding: 6px 10px !important;
+        height: 20px !important;
+    }
+
+    .calc-tool-select {
+        width: 100% !important;
+        padding: 4px 10px;
+    }
+
+    .calc-tool-content {
+        flex-direction: column !important;
+        padding: 8px !important;
+        gap: 4px !important;
+    }
+
+    .calc-tool-rate {
+        padding: 4px 10px !important;
+    }
+
+    .calc-tool-summary-label {
+        font-size: 12px !important;
+        margin-right: 0px !important;
+        margin-left: 10px !important;
+    }
+
+    .calc-tool-col {
+        width: 100% !important;
+    }
+
+    .right-side-calc-tool {
+        gap: 4px !important;
+    }
+
+    .calc-tool-header {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .calc-tool-summary-row {
+        flex-direction: column !important;
+        align-items: start !important;
+        padding: 10px 0px !important;
+        width: 100% !important;
+        margin-bottom: 12px !important;
+    }
+
+    .calc-tool-add-row {
+        margin-top: 0px !important;
+    }
+
+    .about-us-container {
+        max-width: 73vw !important;
+        padding: 14px !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        margin-top: 0px !important;
+        border-radius: 18px !important;
+        margin-bottom: 0px !important;
+        margin-left: 2.5rem !important;
+    }
+
+    .about-us-item {
+        font-size: 10px !important;
+    }
+
+    iframe {
+        height: 120px !important;
+    }
+
+    .about-us-title {
+        font-size: 12px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .about-us-bar {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .about-us-location {
+        font-size: 14px !important;
+    }
+
+    .about-us-icon {
+        margin-right: 14px !important;
+        width: 16px !important;
+        height: 16px !important;
+        padding: 7px !important;
+    }
+
+    .about-us-list {
+        gap: 5px !important;
+    }
+
+    .about-us-message-box {
+        margin-left: 0px !important;
+    }
+
+    .about-us-left {
+        flex-direction: column !important;
+    }
+
+    .wrapper-social {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-self: start !important;
+    }
+
+    .about-us-socials img {
+        margin-left: 0px !important;
+    }
+
+    .about-us-message-box {
+        margin-top: 0px !important;
+        padding: 4px 8px !important;
+        font-size: 10px !important;
+    }
+
+    .about-us-right {
+        width: 100% !important;
+    }
+
+    .etik-message-header {
+        font-size: 10px !important;
+    }
+
+    .etik-message-container {
+        min-width: 72vw !important;
+        margin-bottom: 6rem !important;
+        margin-left: 2.5rem;
+        padding-bottom: 5px;
+    }
+
+    .etik-message-btn {
+        margin-top: 15px !important;
+        width: 100% !important;
+        height: 36px !important;
+        margin: auto !important;
+    }
+
+    .etik-message-row {
+        flex-direction: column !important;
+    }
+
+    .etik-message-form {
+        padding: 12px !important;
+    }
+
+    .etik-message-input,
+    .etik-message-textarea {
+        padding: 4px 8px !important;
+    }
+
+    .etik-message-label {
+        font-size: 10px !important;
+    }
+
+    .custom-table-header {
+        height: 37px !important;
+    }
+
+    .custom-table thead tr th:first-child {
+        width: 50% !important;
+        text-align: left !important;
+        padding: 8px 8px !important;
+        font-size: 10px !important;
+    }
+
+    .custom-table tbody tr td:first-child {
+        width: 36% !important;
+        text-align: left !important;
+        padding: 14px 8px !important;
+        align-self: center !important;
+        font-size: 10px !important;
+    }
+
+    .custom-table tbody tr td:nth-child(2),
+    .custom-table tbody tr td:nth-child(3) {
+        width: 32% !important;
+        text-align: center !important;
+        padding: 8px 4px !important;
+        font-size: 10px !important;
+    }
+
+    .custom-table thead tr th:nth-child(2),
+    .custom-table thead tr th:nth-child(3) {
+        width: 25% !important;
+        text-align: left !important;
+        padding: 8px 8px !important;
+        font-size: 10px !important;
+    }
+
+    .custom-table thead {
+        padding: 8px 0px !important;
+    }
+
+    .custom-value-box {
+        font-size: 10px;
+        padding: 6px 18px !important;
+    }
+
+    .cell-up,
+    .cell-down {
+        font-size: 10px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 6px 8px !important;
+    }
+
+    .custom-table tbody {
+        max-height: 573px !important;
+    }
+
+    .calc-tool-header {
+        font-size: 11px !important;
+        padding: 12px 20px !important;
+    }
+
+    .compliance-section {
+        padding: 0px 0 47px 0;
+    }
+
+    .compliance-columns {
+        gap: 0px;
+        flex-direction: column;
+        max-width: 240px !important;
+        margin-left: 2.3rem !important;
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .compliance-header {
+        margin-top: 10px !important;
+    }
+
+    .compliance-divider {
+        display: none;
+    }
+
+    .compliance-right {
+        margin-top: 12px;
+        border-top: 2px solid #d9d9d9;
+        align-self: flex-start;
+        padding-top: 16px;
+    }
+
+    .compliance-title {
+        font-size: 12px;
+        margin-right: 0px;
+        margin-left: 8px;
+    }
+
+    .compliance-title small {
+        font-size: 10px !important;
+    }
+
+    .compliance-bar {
+        min-width: 30px;
+        width: 50px;
+        height: 12px;
+        margin-right: 0px;
+    }
+
+    .compliance-right {
+        margin-top: 10px !important;
+        padding-top: 0px !important;
+    }
+
+    .compliance-list {
+        margin-top: 12px;
+    }
+
+    .compliance-list li {
+        font-size: 12px;
+    }
+
+    .compliance-contact {
+        font-size: 12px;
+        margin-top: 10px;
+        max-width: 240px !important;
+        margin-left: 2.3rem !important;
+        margin-top: 0px !important;
+    }
+
+    .compliance-header {
+        margin-top: 10px !important;
+    }
+
+    .compliance-list {
+        margin-top: 10px !important;
+    }
+
+    .description-text {
+        font-size: 12px;
+        color: #fff;
+        line-height: 150%;
+        text-align: justify;
+    }
+
+    .services-item-box {
+        padding: 15px 15px !important;
+        gap: 14px;
+        flex-direction: column;
+        max-height: 60vh;
+        overflow-y: auto;
+        max-width: 72vw !important;
+        min-width: unset !important;
+        margin: 1rem auto 4rem auto;
+        box-sizing: border-box;
+    }
+
+    .services-title {
+        margin-bottom: 14px !important;
+        font-size: 18px !important;
+        margin-top: 0px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .services-header {
+        font-size: 15px !important;
+        padding: 12px 24px !important;
+    }
+
+    .services-item-value {
+        height: 32px !important;
+        width: 100% !important;
+        font-size: 10px !important;
+    }
+
+    .services-container {
+        min-width: 78% !important;
+        margin: 32px auto 32px 3rem !important;
+    }
+
+    .services-item-left {
+        width: 100% !important;
+        gap: 14px !important;
+    }
+
+    .services-item-right {
+        width: 100% !important;
+        gap: 14px !important;
+    }
+
+    .services-item-row {
+        flex-direction: column;
+        align-items: start !important;
+        gap: 14px;
+    }
+
+    .services-item-title {
+        width: 100% !important;
+    }
+
+    .section-single-content-container {
+        width: 70%;
+        margin-left: 2rem !important;
+    }
+
+    .hamburger-menu {
+        margin-left: 16px;
+    }
 }
 
 /* min screen */
@@ -2170,7 +2200,7 @@
 }
 
 @media (width: 360px) and (height: 740px) {
-    .table-step{
+    .table-step {
         margin-left: 3rem;
     }
 }
@@ -2242,6 +2272,7 @@
     .custom-value-box {
         font-size: 2vh !important;
         padding: 3px 12px;
+        white-space: nowrap;
 
         img {
             height: 8px;
@@ -2264,11 +2295,23 @@
     .logo-placeholder {
         padding: 0px 0px;
         width: 100%;
-        height: 33px;
+        height: 8vh;
     }
 
     .main-header {
         background-color: transparent;
+
+        .tablet-header-logo {
+            display: flex !important;
+            flex: 1;
+            justify-self: start;
+            margin-left: 20px;
+
+            img {
+                width: auto;
+                height: 8vh;
+            }
+        }
     }
 
     .services-item-left {
@@ -2289,18 +2332,23 @@
     }
 
     .main-footer {
+        display: none;
         margin-bottom: 0;
         padding-bottom: 15px;
         padding-inline: 0;
     }
 
     .footer-left {
+        display: none;
+
         img {
             height: 6vh;
         }
     }
 
     .footer-right {
+        display: none;
+
         img {
             height: 6vh;
         }
